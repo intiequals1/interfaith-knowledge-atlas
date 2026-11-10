@@ -1,0 +1,349 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Interfaith Knowledge Atlas · synthetischer Pilot",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_type",
+    "license",
+    "works",
+    "editions",
+    "passages",
+    "readings",
+    "comparisons"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "dataset_type": {
+      "const": "synthetic"
+    },
+    "license": {
+      "const": "CC0-1.0"
+    },
+    "works": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/work"
+      },
+      "minItems": 1
+    },
+    "editions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edition"
+      },
+      "minItems": 1
+    },
+    "passages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/passage"
+      },
+      "minItems": 1
+    },
+    "readings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reading"
+      },
+      "minItems": 1
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/comparison"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "revision_ref": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*@[1-9][0-9]*$"
+    },
+    "text": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "work": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "title",
+        "genre"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "genre": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "additionalProperties": false
+    },
+    "edition": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "work",
+        "title",
+        "language",
+        "rights"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "work": {
+          "$ref": "#/$defs/revision_ref"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "language": {
+          "$ref": "#/$defs/text"
+        },
+        "rights": {
+          "type": "object",
+          "required": [
+            "mode",
+            "license"
+          ],
+          "properties": {
+            "mode": {
+              "const": "synthetic"
+            },
+            "license": {
+              "const": "CC0-1.0"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "passage": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "edition",
+        "locator"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "edition": {
+          "$ref": "#/$defs/revision_ref"
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "additionalProperties": false
+    },
+    "reading": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "passage",
+        "perspective",
+        "summary",
+        "modality",
+        "addressees",
+        "conditions"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "passage": {
+          "$ref": "#/$defs/revision_ref"
+        },
+        "perspective": {
+          "$ref": "#/$defs/text"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "modality": {
+          "$ref": "#/$defs/text"
+        },
+        "addressees": {
+          "$ref": "#/$defs/text"
+        },
+        "conditions": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "verdict",
+        "rationale",
+        "date"
+      ],
+      "properties": {
+        "reviewer": {
+          "$ref": "#/$defs/id"
+        },
+        "verdict": {
+          "enum": [
+            "approve",
+            "revise",
+            "reject"
+          ]
+        },
+        "rationale": {
+          "$ref": "#/$defs/text"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "type": "object",
+      "required": [
+        "editor",
+        "rationale",
+        "date"
+      ],
+      "properties": {
+        "editor": {
+          "$ref": "#/$defs/id"
+        },
+        "rationale": {
+          "$ref": "#/$defs/text"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "comparison": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "author",
+        "readings",
+        "dimension",
+        "relation",
+        "rationale",
+        "differences",
+        "status",
+        "reviews",
+        "decision"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "author": {
+          "$ref": "#/$defs/id"
+        },
+        "readings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/revision_ref"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "dimension": {
+          "$ref": "#/$defs/text"
+        },
+        "relation": {
+          "enum": [
+            "same_core",
+            "partial_overlap",
+            "thematic",
+            "tension",
+            "contradiction",
+            "no_supported_relation",
+            "insufficient_evidence"
+          ]
+        },
+        "rationale": {
+          "$ref": "#/$defs/text"
+        },
+        "differences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          },
+          "minItems": 1
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "in_review",
+            "approved",
+            "disputed",
+            "withdrawn"
+          ]
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review"
+          }
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/decision"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

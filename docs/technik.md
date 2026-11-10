@@ -1,0 +1,21 @@
+# Technische Richtlinien
+
+## Datenvertrag des Starts
+
+Das [JSON Schema](../schemas/atlas-pilot.schema.json) und die [synthetische Datei](../data/fixtures/atlas-demo.json) bilden einen ausführbaren Ausschnitt des [Zielmodells](konzeptpapier.md#4-datenmodell-und-provenienz). Die erste Fassung hat ausschließlich synthetische Eingaben. Eine spätere Migration ergänzt u. a. zusätzliche Evidenzobjekte, das vollständige Rechteprotokoll pro Repräsentation, Revisionsketten und den Freigabe-Export.
+
+- Jede Sammlung führt stabile IDs und numerische Revisionen. Referenzen kombinieren ID und Revision als `id@revision`. Referenzierte Revisionen müssen vorhanden sein. Für die Weiterentwicklung bleiben veröffentlichte Revisionen unveränderlich. Neue Fassungen verweisen auf die Vorgänger.
+- Fundstellen verweisen auf die Edition und darüber auf das Werk. Lesarten beziehen sich auf eine Fundstelle, weisen eine Perspektive aus und halten Adressaten, Modalität und Geltungsbedingungen fest. Vergleichsaussagen beziehen sich auf genau zwei verschiedene Lesart-IDs.
+- `same_core` bezeichnet denselben Aussagekern unter benannten Bedingungen. `partial_overlap` erfasst einen gemeinsamen Teil bei sachlichem Unterschied. `thematic` markiert den gemeinsamen Untersuchungsgegenstand. `tension` kennzeichnet begründete Spannung. `contradiction` setzt vergleichbare Voraussetzungen voraus. `no_supported_relation` markiert eine dokumentierte Negativentscheidung. `insufficient_evidence` steht für einen offenen Befund. Historische Evidenz wird gesondert modelliert.
+- Der synthetische Datensatz simuliert `draft`, `in_review`, `approved`, `disputed` und `withdrawn`. Ein simulierter freigegebener Eintrag verlangt zwei unabhängige Zustimmungen und eine redaktionelle Entscheidung. JSON Schema kontrolliert Form und Pflichtfelder. Der lokale Prüfer kontrolliert Verweise, Eindeutigkeit und Rollen im Beispieldatensatz. Beide Prüfungen sind Vorbedingungen für eine spätere Freigabe.
+- Freigaberegeln im Pilotbetrieb gelten für Ansicht, Suche, Einzelabruf und Export. Rechteentscheidung und redaktionelle Entscheidung werden separat geprüft. Ungeklärte Textrechte führen zur Metadatenroute. Bei Sperren werden alle betroffenen Repräsentationen, Indexeinträge und Caches über einen gemeinsamen Freigabe-Snapshot ausgetauscht. Der letzte gültige Snapshot bleibt für Rückrollvorgänge verfügbar, soweit er keine inzwischen gesperrten Inhalte enthält.
+
+## Geplante Umsetzung
+
+1. **Import.** Versioniertes JSON und nachvollziehbare, idempotente Imports. Import stellt erst nach Schema-, Verweis- und Rechteprüfung einen neuen Snapshot bereit. Der Import schreibt keine nicht freigegebenen Textfelder in Protokolle.
+2. **Suche.** Lokaler Volltextindex mit BM25, kontrollierten Schlagwörtern und Filterung nach Tradition, Kontext, Gattung und Prüfstatus. Experimentelle Vektorsuche ausschließlich über freigegebene Felder. Index, Modellrevision und Parameter stehen in einem Laufmanifest. Vorschläge sind vom Freigabe-Datensatz getrennt.
+3. **Ansicht.** Stabile Eintragslinks, tastaturbedienbare Synopse, beschriftete Statusangaben, Rechts-nach-links-Darstellung für später freigegebene Originalschriften. Interne Annotationen erhalten eine eigene Zugriffsschicht. Externe Quellverweise werden als Daten behandelt und nicht serverseitig automatisch abgerufen.
+4. **Betrieb.** Schema- und Sicherheitsprüfungen vor Veröffentlichung. Begrenzte Aufbewahrung technischer Logs ohne Suchfreitext. Rechteentzug, Neuindexierung und Rückrollvorgang im Testbestand durchspielen. Prüfsummen für publizierte Snapshots. Geheimnisse gehören in die Betriebsumgebung.
+5. **Interoperabilität.** Aus einem geprüften Snapshot später JSON-LD mit PROV-O und SKOS ableiten. Aussagen über Lesarten sind eigenständige, qualifizierte Entitäten. Der Export leitet aus der paarweisen Überlappung keine weiteren Kanten ab.
+
+Änderungen an Pflichtfeldern, Labeldefinitionen, Rechteprüfung oder Freigabe dokumentieren die betroffenen Versionen, Migration und Prüffälle im Pull Request.

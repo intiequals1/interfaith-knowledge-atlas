@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "dataset_type": "synthetic",
+  "license": "CC0-1.0",
+  "works": [
+    {"id": "werk-hof", "revision": 1, "title": "Regeln für einen Modellhof", "genre": "erfundene Spielanleitung"},
+    {"id": "werk-werkstatt", "revision": 1, "title": "Regeln für eine Modellwerkstatt", "genre": "erfundene Spielanleitung"}
+  ],
+  "editions": [
+    {"id": "ausgabe-hof", "revision": 1, "work": "werk-hof@1", "title": "Testausgabe A", "language": "de", "rights": {"mode": "synthetic", "license": "CC0-1.0"}},
+    {"id": "ausgabe-werkstatt", "revision": 1, "work": "werk-werkstatt@1", "title": "Testausgabe B", "language": "de", "rights": {"mode": "synthetic", "license": "CC0-1.0"}}
+  ],
+  "passages": [
+    {"id": "stelle-hof", "revision": 1, "edition": "ausgabe-hof@1", "locator": "Fiktiver Abschnitt A.1"},
+    {"id": "stelle-werkstatt", "revision": 1, "edition": "ausgabe-werkstatt@1", "locator": "Fiktiver Abschnitt B.1"}
+  ],
+  "readings": [
+    {
+      "id": "lesart-hof", "revision": 1, "passage": "stelle-hof@1",
+      "perspective": "Synthetische redaktionelle Lesart A",
+      "summary": "Im Hofspiel sollen Teilnehmende ungefragt Hilfe beim Aufräumen anbieten, wenn sie sich selbst Hilfe wünschen würden.",
+      "modality": "Aufforderung zu einer Handlung",
+      "addressees": "Teilnehmende des Hofspiels",
+      "conditions": "Gemeinsame Aufräumphase"
+    },
+    {
+      "id": "lesart-werkstatt", "revision": 1, "passage": "stelle-werkstatt@1",
+      "perspective": "Synthetische redaktionelle Lesart B",
+      "summary": "Im Werkstattspiel sollen Teilnehmende eine begonnene Arbeit nicht unterbrechen, wenn sie sich selbst Ruhe wünschen würden.",
+      "modality": "Aufforderung zu einer Unterlassung",
+      "addressees": "Teilnehmende des Werkstattspiels",
+      "conditions": "Laufende Einzelarbeit"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "vergleich-perspektivwechsel", "revision": 1, "author": "demo-autor",
+      "readings": ["lesart-hof@1", "lesart-werkstatt@1"],
+      "dimension": "Perspektivwechsel als Entscheidungsmaßstab",
+      "relation": "partial_overlap",
+      "rationale": "Beide Regeln beziehen eine angenommene eigene Präferenz auf das Verhalten gegenüber einer anderen Person.",
+      "differences": ["Hilfsangebot und Verzicht auf Unterbrechung betreffen verschiedene Handlungen und Spielsituationen."],
+      "status": "approved",
+      "reviews": [
+        {"reviewer": "demo-review-a", "verdict": "approve", "rationale": "Die gemeinsame Vergleichsdimension ist explizit benannt.", "date": "2026-11-10"},
+        {"reviewer": "demo-review-b", "verdict": "approve", "rationale": "Die Unterschiede in Handlung und Geltung bleiben sichtbar.", "date": "2026-11-10"}
+      ],
+      "decision": {"editor": "demo-redaktion", "rationale": "Beide synthetischen Prüfungen stützen die Einstufung.", "date": "2026-11-10"}
+    }
+  ]
+}
