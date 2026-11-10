@@ -2,7 +2,13 @@
 
 **Konzeptpapier für ein Forschungs- und Entwicklungsprojekt**
 
-Version 0.1 · 10. November 2026 · Projektentwurf
+Version 0.2 · 10. November 2026 · Projektentwurf
+
+## Wo Ethik für mich beginnt
+
+Wer zu Hause erlebt, dass beim Essen alle etwas bekommen sollen, lernt eine Vorstellung von Fairness durch eine alltägliche Gepflogenheit. Aus solchen Gepflogenheiten wächst für mich **Sittlichkeit**, also das gelebte Verständnis davon, was wir einander schulden. Sie bildet eine Grundlage gesellschaftlicher Normen und Gesetze. **Ethik** entsteht für mich, wenn wir diese Sittlichkeit bewusst prüfen. Dann fragen wir, warum eine Regel gelten soll und für wen sie gerecht ist.
+
+Das **Haus, in dem wir aufwachsen**, steht für die Menschen und das soziale Umfeld, die uns prägen. Dazu gehören religiöse und nichtreligiöse Überzeugungen, etwa humanistische oder philosophische. Der Atlas hält solche Prägungen fest, wo Quellen einen Bezug zu einer Aussage oder Gepflogenheit belegen.
 
 ## Kurzfassung
 
@@ -16,9 +22,11 @@ Das Vergleichsverfahren folgt in Anlehnung an Freiberger den Schritten Auswahl, 
 
 Der Pilot untersucht eine gezielte Stichprobe von Quellen und Lesarten. Aussagen über ihre Häufigkeit, Verbreitung oder Verbindlichkeit innerhalb einer Religion erfordern eigene Untersuchungen. Die vier Religionsbezeichnungen dienen als Einstieg in die Suche. Zuordnungen zu Strömungen, Schulen und Rezeptionszusammenhängen werden an der jeweiligen Aussage belegt und können sich überlappen. Textzeugnisse und die Beschreibung gegenwärtiger Praxis erhalten getrennte Kennzeichnungen. Menschenwürde und Gerechtigkeit bilden mögliche Folgethemen mit eigenen Auswahlregeln.
 
+Der einleitende Ethikzugang bestimmt die Fragen des Projekts. Für konkrete Fälle wird getrennt erfasst, welche Gepflogenheit belegt ist, wie sie begründet wird und ob ein Bezug zu einer sozialen Norm oder einem Gesetz nachweisbar ist. Ob eine Regel historisch aus einer bestimmten Praxis hervorging und ob sie ethisch begründbar ist, sind zwei eigenständige Fragen. Der Pilot erfasst religiöse und nichtreligiöse Überzeugungen als Kontext, soweit sie für die ausgewählten Fälle belegt sind.
+
 ## 2. Forschungsfragen und prüfbare Erwartungen
 
-1. **Vergleichbarkeit.** Unter welchen Bedingungen lassen sich Aussagen über Gegenseitigkeit über Sprachen, Gattungen und Traditionen hinweg vergleichen? Erfasst werden Handlung oder Haltung, Modalität, Adressaten, Bedingungen, Reichweite und Begründung. Die Redaktion prüft, welche dieser Dimensionen unterschiedliche Einstufungen erklären.
+1. **Vergleichbarkeit.** Unter welchen Bedingungen lassen sich Aussagen über Gegenseitigkeit über Sprachen, Gattungen und Traditionen hinweg vergleichen? Erfasst werden Handlung oder Haltung, Modalität, Adressaten, Bedingungen, Reichweite und Begründung. Die Redaktion prüft, welche dieser Dimensionen unterschiedliche Einstufungen erklären. Wo zusätzliche Belege vorliegen, vermerkt sie, wie religiöse oder nichtreligiöse Überzeugungen, gelebte Gepflogenheiten und formulierte Regeln zusammenhängen.
 2. **Verlässlichkeit.** Wie zuverlässig wenden unabhängig annotierende Personen die Relationstypen an? Als Arbeitsziel gilt ein nominales Krippendorff-Alpha von mindestens 0,70 für die primäre semantische Einstufung im Pilotversuch. Konfusionsmatrix und dokumentierte Dissense zeigen, welche Kategorien überarbeitet werden müssen. [Artstein und Poesio 2008](https://aclanthology.org/J08-4004/)
 3. **Nutzen der KI.** Erhöht eine Kombination aus BM25 und mehrsprachigen Einbettungen den mittleren Recall@10 auf zurückgehaltenen Suchanfragen gegenüber BM25 allein? Als praktisch relevanter Effekt werden vorab mindestens zehn Prozentpunkte angesetzt. Bei mehr irreführenden Gleichsetzungen in den obersten Treffern bleibt BM25 der Standard.
 4. **Verständlichkeit.** Können Nutzende in der Synopse die zugrunde liegende Ausgabe finden und erklären, worin eine Beziehung besteht und wo sie endet? In einem moderierten Test wird beobachtet, ob Prüfstatus, Quelle und Geltungsbereich korrekt wiedergegeben werden.
@@ -44,7 +52,7 @@ Werk → Ausgabe → Fundstelle → Lesart → Vergleichsaussage → Prüfung �
 
 - **Werk und Ausgabe.** Werk-ID, Titelvarianten, Gattung, Zuordnungen und Datierungsbereich. Jede konkrete Ausgabe oder Übersetzung erhält eine eigene ID mit Sprache, Schrift, Herausgabe oder Übersetzung, Anbieter, Erscheinungsangabe, Versionsmerkmal und dokumentierter Rechteentscheidung.
 - **Fundstelle.** Editionsgebundener Locator und auflösbarer Quellverweis. Abweichende Vers- oder Kapitelzählungen erhalten explizite Zuordnungen mit Begründung. Text, Übersetzung, eigene Paraphrase und bibliografische Metadaten sind getrennte Objekte mit eigenen Freigaben.
-- **Lesart.** Aussage in redaktionellen Worten mit Quelle, Begründung, Gattung, Sprecherrolle, Zielgruppe, Rezeptionsperspektive und Unsicherheit. Eine Fundstelle kann mehrere nebeneinander gültige Lesarten haben. Freitext bleibt neben kontrollierten Merkmalen erhalten.
+- **Lesart.** Aussage in redaktionellen Worten mit Quelle, Begründung, Gattung, Sprecherrolle, Zielgruppe, Rezeptionsperspektive und Unsicherheit. Eine Fundstelle kann mehrere nebeneinander gültige Lesarten haben. Freitext bleibt neben kontrollierten Merkmalen erhalten. Ergänzende Kontextbelege kennzeichnen Gepflogenheit, Überzeugung, soziale Norm oder Gesetz jeweils mit eigener Quelle, zeitlicher und sozialer Reichweite und dem belegten Bezug zur Lesart.
 - **Vergleichsaussage.** Zwei unterschiedliche Lesart-Revisionen, ein expliziter Vergleichsgesichtspunkt, eine Relation, gemeinsame Merkmale, Unterschiede, Evidenz und Begründung. Weitere Vergleichsgesichtspunkte werden als eigene Aussagen erfasst. Historische Verbindungen haben ein getrenntes Relationsfeld und eine eigene Prüfung.
 - **Prüfung und Freigabe.** Unabhängige Einzelurteile referenzieren dieselbe Revision. Prüfrollen, Zeit, Kriterien und Dissense werden protokolliert. Redaktionelle Entscheidung, Rechteentscheid und Veröffentlichungsereignis bleiben separat nachvollziehbar.
 

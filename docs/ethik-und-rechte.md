@@ -3,6 +3,7 @@
 ## Redaktionelle Leitplanken
 
 - Aussage und Auslegung mit Quelle, Ausgabe, Kontext und Standpunkt ausweisen. Zuordnungen zu einer Schule oder Gemeinschaft brauchen einen Beleg und einen begrenzten Geltungsbereich.
+- Gelebte Gepflogenheiten, religiöse oder nichtreligiöse Überzeugungen, soziale Normen und Gesetze als verschiedene Befunde erfassen. Verbindungen jeweils belegen. Überzeugungen nur bei ausdrücklicher Quellenzuschreibung zuordnen und aus Einzelfällen keine Aussagen über ganze Haushalte oder Gemeinschaften ableiten.
 - Widersprüche und Dissens nach prüfbaren Kriterien dokumentieren. Auf die Rangordnung religiöser Traditionen, Bekenntnisprofile und Aussagen über die Glaubwürdigkeit ganzer Gemeinschaften verzichten.
 - Bei Gemeinschaftswissen mit Zugangsbeschränkung, sensiblen Ritualen und absehbaren Missbrauchsrisiken die Aufnahme aussetzen. Einschlägige Perspektiven einbeziehen und den Entscheid im geschützten Register begründen.
 - Für den Pilotbetrieb keine Glaubenszugehörigkeit erfassen. Für Nutzungsstudien nur notwendige Angaben erheben, freiwillige Teilnahme sichern und Aufbewahrungs- und Löschfristen vorab festlegen.
