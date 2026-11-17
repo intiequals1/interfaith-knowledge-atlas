@@ -105,6 +105,19 @@ Für eigene Software und das technische Schema gilt **MIT**. Eigene Projekttexte
 
 Rechteprüfung erfolgt für jede konkrete Edition, Übersetzung, Digitalisierung, Datenbankübernahme und Repräsentation. Ein alter Text oder eine frei erreichbare Webseite reicht als Freigabebeleg für eine moderne Ausgabe nicht aus. Bei unklarem Status bleiben Textkopien, Übersetzungen, Screenshots, Importdateien und daraus berechnete Vektoren außerhalb des Systems. Die Redaktion prüft auch Anbieterbedingungen, Zuschreibung, etwaige Datenbankrechte und die Freigabe für Weiterverarbeitung. Hinweise auf historische Belegstellen und Bibliografien in diesem Konzept sind Rechercheverweise. [Sefaria, Copyright and Data Use](https://developers.sefaria.org/docs/usage-of-our-name-and-logo)
 
+## 10. Erweiterungsmodul: DailyEthics4all.io — Ethik als tägliche Praxis
+
+**Neue konzeptionelle Projektlinie (17. November 2026):** Der Interfaith Knowledge Atlas bleibt eine quellenkritische Forschungs- und Vergleichsinfrastruktur. Das ergänzende, eigenständig nutzbare **DailyEthics4all.io** überträgt den Anspruch „Ethik als Infrastruktur“ in ein freiwilliges interaktives Lernformat mit täglichen, rollenspezifischen Mikroszenarien für Führung, Entwicklung und Sachbearbeitung.
+
+Erste heuristische Entscheidungen können **ohne persönliche Identifizierung oder Serverübertragung** reflektiert und mit Deontologie, Konsequentialismus/Utilitarismus, Tugendethik und Care-Ethik betrachtet werden. Es gibt keine automatische Festlegung auf eine „richtige“ Moral, keinen persönlichen Moral-Score und keine Auswertung individueller Antworten für Arbeitgeber. Der mögliche Lernnutzen soll in einem ethisch überprüften Pilot empirisch geprüft werden.
+
+**Verhältnis beider Komponenten:** DailyEthics4all ist im Kern säkular und benötigt keine religiösen Informationen. Ein freiwillig zuschaltbarer Adapter könnte später geprüfte Atlas-Lesarten als weitere Quellenperspektive einblenden, ohne historische Herkunft, theologische Differenz und normative Autorität gleichzusetzen.
+
+**Schutzbedingungen:** Das Konzept setzt Privacy by Design, DSGVO-Prüfung (einschließlich besonders schutzwürdiger Angaben in Freitexten), frei zugängliche Datenschutzinformationen und **WCAG 2.2, Stufe AA** als Entwicklungsziel mit manueller und automatisierter Evaluation voraus. Für Organisations-/Forschungsszenarien sind Rechtsgrundlagen, Verantwortlichkeit, Machtasymmetrien und ggf. Datenschutz-Folgenabschätzung gesondert zu klären. Die Anwendung ist noch nicht implementiert.
+
+- [Vollständiges Modulkonzept DailyEthics4all.io](dailyethics4all.md)
+- [Datenschutz, UX und WCAG-2.2-AA-Anforderungen](dailyethics4all-datenschutz-wcag.md)
+
 ## Quellen zur Methodik
 
 - Freiberger, Oliver (2018). *Elements of a Comparative Methodology in the Study of Religion*. Religions 9(2), 38. [Publikation](https://doi.org/10.3390/rel9020038)
