@@ -32,4 +32,8 @@ Die folgenden Aufgaben beziehen sich ausschließlich auf das **konzeptionelle Le
 | D4A-07 | P2 | Ethik-Pilot und Wirkungsforschung | Teilnahme freiwillig und von Arbeitgebersicht getrennt; präregistrierte Kriterien für Reflexionsqualität; kein personenbezogener Moral-Score |
 | D4A-08 | P2 | Optionaler IKA-Referenzadapter | Nur geprüfte Atlas-Revisionen, explizites Opt-in und klare Quellen-/Differenzanzeige; keine religiösen Nutzerprofile |
 
+
+| D4A-09 | P0 | KI-Transparenz an Oberfläche und Quellenmodell | KI-gestützte Entstehung und tatsächlicher Live-KI-Einsatz klar unterscheidbar; Modell/Version und Prüfstatus dokumentiert; keine ungeprüfte Angabe „menschlich freigegeben“; die Demo verlinkt den Transparenztext |
+| D4A-10 | P1 | HTML-/CSS-Demo prüfen und für freigegebenen Pilot härten | Tastatur, Screenreader, Zoom, 320-CSS-px-Reflow, Farb- und Nicht-Text-Kontrast getestet; kein Absenden von Lernantworten, auch bei deaktiviertem JavaScript; barrierefreie Fehler-/Statusanzeigen; Findings dokumentiert |
+
 **Release-Gate:** Kein personenbezogener Forschungs- oder Organisationsbetrieb, bevor Datenschutzverantwortung, Rechtsprüfung, ggf. DSFA, Freigabeverfahren und Accessibility-Nachweise dokumentiert sind. Siehe [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md).
