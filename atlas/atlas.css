@@ -148,3 +148,7 @@
   .source-grid { display: block; }
   .source-item { margin-bottom: 1.4rem; }
 }
+
+/* Ohne JavaScript keine inaktiven Filter oder leeren Vergleichsflächen anbieten. */
+.no-js .atlas-controls, .no-js .source-grid, .no-js #katalog-status,
+.no-js .compare-controls, .no-js #vergleich-status, .no-js #vergleich-ergebnis { display: none; }
