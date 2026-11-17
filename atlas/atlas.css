@@ -1,0 +1,150 @@
+/* Interfaith Knowledge Atlas – UI auf Basis des bestehenden, zugänglich angelegten Designsystems.
+   WCAG-2.2-AA-Entwicklungsziel; manuelle Prüfung bleibt erforderlich. */
+.atlas-intro { background: linear-gradient(140deg, #e9f3f0, #f7faf9 68%); }
+.atlas-hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(16rem, .8fr); gap: clamp(1.5rem, 5vw, 5.5rem); align-items: center; }
+.atlas-hero-grid > * { min-width: 0; }
+.atlas-intro h1 { max-width: 14ch; }
+.atlas-intro .lead { max-width: 56ch; }
+.atlas-intro .atlas-state { box-shadow: none; }
+.atlas-subheading { max-width: 68ch; color: var(--muted); font-size: 1.05rem; }
+.atlas-working { background: #ffffff; }
+.atlas-controls {
+  display: grid;
+  grid-template-columns: minmax(14rem, 1fr) minmax(15rem, 1.35fr) minmax(12rem, .9fr);
+  gap: 1.1rem;
+  margin: 1.8rem 0 1.2rem;
+  padding: clamp(1rem, 3vw, 1.55rem);
+  background: #edf4f2;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+.field { min-width: 0; }
+.field label { display: block; font-weight: 730; margin-bottom: .35rem; }
+.field input, .field select, .compare-controls select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #647e85;
+  border-radius: .62rem;
+  background: #ffffff;
+  color: var(--ink);
+  padding: .7rem .9rem;
+  min-height: 48px;
+  font-size: 1rem;
+}
+.field input::placeholder { color: #4c626b; }
+.field .hint { font-size: .88rem; margin: .45rem 0 0; }
+.result-status {
+  color: var(--muted);
+  min-height: 1.65rem;
+  margin: 1rem 0;
+  font-weight: 630;
+}
+.source-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+.source-item { min-width: 0; }
+.source-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+}
+.source-kind {
+  font-size: .82rem;
+  font-weight: 770;
+  letter-spacing: .06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 .6rem;
+}
+.source-card h3 { font-size: 1.45rem; margin: 0 0 .35rem; }
+.source-work { font-weight: 630; font-size: .95rem; margin-bottom: .85rem; color: var(--muted); }
+.source-summary { font-size: 1.06rem; margin-bottom: 1rem; }
+.card-meta, .compare-meta { margin: 0; }
+.card-meta dt, .compare-meta dt { font-size: .86rem; font-weight: 760; }
+.card-meta dd, .compare-meta dd { margin: .08rem 0 .6rem; }
+.card-meta { padding-top: 1rem; border-top: 1px solid var(--border); }
+.source-details { margin-top: .75rem; border-top: 1px solid var(--border); padding-top: .7rem; }
+.source-details summary {
+  min-height: 44px;
+  padding: .55rem .15rem;
+  font-weight: 740;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+  cursor: pointer;
+}
+.source-details > p { margin: .5rem 0 1rem; }
+.source-limitation { color: var(--muted); }
+.review-note { font-weight: 660; font-size: .92rem; color: #394e55; }
+.source-card > .review-note { margin-top: auto; padding-top: 1rem; }
+.source-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.choose-source {
+  padding: .6rem .85rem;
+  border: 2px solid #155348;
+  color: #103e36;
+  background: #ffffff;
+  border-radius: .6rem;
+  min-height: 44px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.choose-source:hover { background: #e8f3ef; }
+.source-link { display: inline-block; font-weight: 720; line-height: 1.4; padding: .65rem .1rem; min-height: 44px; }
+.empty-state { grid-column: 1 / -1; padding: 1.5rem; border: 1px solid var(--border); border-radius: .8rem; }
+.empty-state p { margin: 0; }
+.comparison-section { background: #f7faf9; }
+.compare-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)) auto; gap: 1rem; align-items: end; padding-block: 1.4rem; }
+.compare-controls .button { white-space: normal; }
+.comparison-sheet { border: 1px solid var(--border); background: white; border-radius: 1rem; overflow: hidden; }
+.comparison-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+.comparison-reading { padding: clamp(1.1rem, 3vw, 1.8rem); min-width: 0; }
+.comparison-reading + .comparison-reading { border-left: 1px solid var(--border); }
+.comparison-reading h3 { font-size: 1.35rem; margin: 0 0 .4rem; }
+.reading-summary { font-size: 1.07rem; font-weight: 650; margin: 1.1rem 0; }
+.compare-meta { border-top: 1px solid var(--border); padding-top: .9rem; }
+.compare-meta dd { margin-bottom: .85rem; }
+.comparison-reading .source-link { margin-top: .6rem; }
+.relation-analysis { padding: clamp(1.2rem, 3vw, 2rem); border-top: 2px solid var(--border); background: #edf4f2; }
+.relation-analysis h3 { margin-top: 0; }
+.relation-analysis h4 { margin-top: 1.3rem; }
+.shared-idea { font-size: 1.14rem; font-weight: 670; }
+.relation-label { font-weight: 740; color: var(--accent-dark); }
+.differences { padding-left: 1.4rem; margin: .8rem 0 1.4rem; }
+.differences li { margin-bottom: .6rem; padding-left: .2rem; }
+.method-list article { padding-block: .65rem 1rem; border-bottom: 1px solid var(--border); }
+.method-list article h3 { margin-top: .8rem; }
+.method-list article p { max-width: 65ch; }
+#vergleich-ergebnis:focus-visible { outline-offset: .4rem; }
+@media (max-width: 60rem) {
+  .atlas-hero-grid { grid-template-columns: 1fr; }
+  .atlas-state { max-width: 43rem; }
+  .atlas-controls { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .atlas-controls .field:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
+  .compare-controls { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .compare-controls .button { grid-column: 1 / -1; justify-self: start; }
+}
+@media (max-width: 45rem) {
+  .source-grid, .comparison-columns, .atlas-controls, .compare-controls { grid-template-columns: 1fr; }
+  .atlas-controls .field:nth-child(2), .compare-controls .button { grid-column: auto; grid-row: auto; }
+  .comparison-reading + .comparison-reading { border-left: 0; border-top: 1px solid var(--border); }
+  .source-actions { flex-direction: column; align-items: stretch; }
+  .source-link { align-self: start; }
+  .choose-source, .compare-controls .button { width: 100%; }
+}
+@media print {
+  .atlas-controls, .source-actions, .compare-controls { display: none; }
+  .comparison-sheet, .source-card { break-inside: avoid; }
+  .source-grid { display: block; }
+  .source-item { margin-bottom: 1.4rem; }
+}
