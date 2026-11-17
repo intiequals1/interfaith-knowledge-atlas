@@ -6,7 +6,8 @@
   const result = document.getElementById("perspektiven");
   const choiceLabel = document.getElementById("auswahl-anzeige");
   const status = document.getElementById("form-status");
-  if (!form || !result || !choiceLabel || !status) return;
+  const showPerspectives = document.getElementById("show-perspectives");
+  if (!form || !result || !choiceLabel || !status || !showPerspectives) return;
 
   // Progressive Enhancement: ohne JavaScript bleiben die Perspektiven sichtbar.
   result.hidden = true;
@@ -19,8 +20,9 @@
     skip: "Keine Entscheidung festhalten"
   });
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  form.addEventListener("submit", (event) => event.preventDefault());
+
+  showPerspectives.addEventListener("click", () => {
     const selected = form.querySelector('input[name="decision"]:checked');
     const choiceText = selected && Object.prototype.hasOwnProperty.call(selectedLabels, selected.value)
       ? selectedLabels[selected.value]
