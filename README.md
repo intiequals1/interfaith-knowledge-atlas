@@ -17,6 +17,8 @@ Der Interfaith Knowledge Atlas ist ein Forschungs- und Entwicklungsprojekt für 
 | [Konzeptpapier](docs/konzeptpapier.md) | Forschungsfragen, Vergleichsmethode, Provenienz, Evaluation und Roadmap |
 | [DailyEthics4all.io – Lernkonzept](docs/dailyethics4all.md) | Tägliche freiwillige Ethik-Mikroszenarien, Reflexionsfluss und Forschungshypothesen |
 | [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md) | Privacy by Design, DSGVO-Prüfstationen, inklusiver Lernfluss und WCAG-2.2-AA-Abnahmekriterien |
+| [KI-Transparenz](docs/ki-transparenz.md) | Offenlegung der KI-gestützten Entwurfsarbeit, Grenzen, Provenienz und Prüfstatus |
+| [HTML-Demo](demo/index.html) | Responsive, datensparsames Mikroszenario mit KI-Transparenz, zugänglicher CSS-Gestaltung und lokalen Interaktionen |
 | [Technische Richtlinien](docs/technik.md) | Datenvertrag, Architektur, Freigaberegeln und Betrieb |
 | [Ethik und Rechte](docs/ethik-und-rechte.md) | Kontext, Rechteprüfung, Datenschutz und Sperrverfahren |
 | [Mitwirken](CONTRIBUTING.md) | Beiträge, Review und Verantwortlichkeiten |
@@ -36,3 +38,7 @@ python scripts/validate_atlas.py data/fixtures/atlas-demo.json
 ```
 
 Für die Entwicklung sind ausschließlich synthetische oder nach dem dokumentierten Verfahren freigegebene Eingaben vorgesehen. Quellenhinweise im Konzept dienen der Recherche. Religiöse Volltexte, fremde Übersetzungen und Editionsscans gehören bis zur geprüften Freigabe außerhalb des Repositorys.
+
+## HTML-Demo lokal öffnen
+
+Die [Demo](demo/index.html) liegt als **Quellcode** unter `demo/` und ist nicht öffentlich bereitgestellt. Zur Vorschau das Repository mit Berechtigung klonen oder herunterladen und die Datei `demo/index.html` lokal im Browser öffnen. `styles.css` und `app.js` liegen im selben Verzeichnis. Die Reflexion bleibt lokal; es gibt keine Live-KI. Ohne JavaScript bleiben die allgemeinen Perspektiven als Text zugänglich. Vor einem Hosting sind Betreiberinformationen, Sicherheitsheader, Logging, DSGVO und eine vollständige manuelle WCAG-2.2-AA-Prüfung notwendig.
