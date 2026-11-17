@@ -14,6 +14,7 @@ Der Interfaith Knowledge Atlas ist ein Forschungs- und Entwicklungsprojekt für 
 
 | Einstieg | Inhalt |
 | --- | --- |
+| [HTML-Startseite](index.html) | Statischer Einstieg mit Projektübersicht, KI-Transparenz und Zugang zur Demo |
 | [Konzeptpapier](docs/konzeptpapier.md) | Forschungsfragen, Vergleichsmethode, Provenienz, Evaluation und Roadmap |
 | [DailyEthics4all.io – Lernkonzept](docs/dailyethics4all.md) | Tägliche freiwillige Ethik-Mikroszenarien, Reflexionsfluss und Forschungshypothesen |
 | [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md) | Privacy by Design, DSGVO-Prüfstationen, inklusiver Lernfluss und WCAG-2.2-AA-Abnahmekriterien |
@@ -41,4 +42,4 @@ Für die Entwicklung sind ausschließlich synthetische oder nach dem dokumentier
 
 ## HTML-Demo lokal öffnen
 
-Die [Demo](demo/index.html) liegt als **Quellcode** unter `demo/` und ist nicht öffentlich bereitgestellt. Zur Vorschau das Repository mit Berechtigung klonen oder herunterladen und die Datei `demo/index.html` lokal im Browser öffnen. `styles.css` und `app.js` liegen im selben Verzeichnis. Die Reflexion bleibt lokal; es gibt keine Live-KI. Ohne JavaScript bleiben die allgemeinen Perspektiven als Text zugänglich. Vor einem Hosting sind Betreiberinformationen, Sicherheitsheader, Logging, DSGVO und eine vollständige manuelle WCAG-2.2-AA-Prüfung notwendig.
+Die [Startseite](index.html) und die [Demo](demo/index.html) liegen als **Quellcode** unter `demo/` und ist nicht öffentlich bereitgestellt. Zur Vorschau das Repository mit Berechtigung klonen oder herunterladen und zunächst `index.html` oder direkt `demo/index.html` lokal im Browser öffnen. `styles.css` und `app.js` liegen im selben Verzeichnis. Die Reflexion bleibt lokal; es gibt keine Live-KI. Ohne JavaScript bleiben die allgemeinen Perspektiven als Text zugänglich. Vor einem Hosting sind Betreiberinformationen, Sicherheitsheader, Logging, DSGVO und eine vollständige manuelle WCAG-2.2-AA-Prüfung notwendig.
