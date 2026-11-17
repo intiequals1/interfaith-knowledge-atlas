@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,7 +55,8 @@
         <div class="story" aria-label="Ausgangssituation">
           <p>Eine Lieferantenzahlung ist heute fällig. Kurz vorher wurde die Bankverbindung per E-Mail geändert. Deine Führungskraft bittet um sofortige Freigabe, um eine Lieferunterbrechung zu vermeiden. Die Änderung wurde noch nicht über einen unabhängigen Kanal bestätigt.</p>
         </div>
-        <form id="reflection-form" autocomplete="off">
+        <noscript><p class="important-note">Für die interaktive Übung wird JavaScript benötigt. Die allgemeinen Reflexionsperspektiven stehen direkt unter diesem Hinweis.</p></noscript>
+        <div id="reflection-form">
           <fieldset class="choice-group">
             <legend>Was wäre dein erster Schritt?</legend>
             <p class="hint" id="auswahl-hinweis">Du kannst eine Option wählen oder die Auswahl offenlassen. Es gibt hier keine Bewertung.</p>
@@ -68,15 +69,15 @@
           <div class="form-field">
             <label for="begruendung">Was beeinflusst deine erste Einschätzung? <span class="optional">(freiwillig)</span></label>
             <p class="hint" id="begruendung-hinweis">Diese Notiz bleibt in diesem Browserfenster, wird nicht analysiert und nicht versendet. Bitte keine echten Personen- oder Geschäftsdaten eingeben.</p>
-            <textarea id="begruendung" name="reason" rows="3" maxlength="600" aria-describedby="begruendung-hinweis" placeholder="Zum Beispiel: Welche Information fehlt mir noch?"></textarea>
+            <textarea id="begruendung" name="reason" autocomplete="off" rows="3" maxlength="600" aria-describedby="begruendung-hinweis" placeholder="Zum Beispiel: Welche Information fehlt mir noch?"></textarea>
           </div>
           <div class="button-row">
             <button class="button primary" id="show-perspectives" type="button">Perspektiven ansehen</button>
             <noscript><p>Ohne JavaScript bleiben die Reflexionsperspektiven unter dem Formular sichtbar. Die Schaltfläche „Perspektiven ansehen“ wertet dann keine Eingaben aus.</p></noscript>
-            <button class="button secondary" type="reset">Eingaben löschen</button>
+            <button class="button secondary" id="clear-inputs" type="button">Eingaben löschen</button>
           </div>
           <p id="form-status" class="sr-only" role="status" aria-live="polite"></p>
-        </form>
+        </div>
         <!-- Ohne JavaScript bleiben die Reflexionsperspektiven sichtbar. -->
         <section id="perspektiven" class="reflection-result" aria-labelledby="perspektiven-titel" tabindex="-1">
           <p class="eyebrow">02 / Perspektivenwechsel</p>
