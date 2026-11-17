@@ -118,6 +118,12 @@ Die verbindlichen Design-, Datenschutz- und Accessibility-Anforderungen stehen i
 4. Welche Daten sind für die Evaluation wirklich notwendig; ist eine rein lokale Auswertung ausreichend?
 5. Wie melden Nutzende problematische Szenarien, KI-Fehler, diskriminierende Beispiele und Barrieren ohne Offenlegung ihrer privaten Reflexion?
 
+## 11. KI-Transparenz und Demoseite
+
+Der Produktentwurf und die Dokumentation wurden mithilfe von KI formuliert; die unabhängige wissenschaftliche und technische Prüfung bleibt offen. In der [HTML-Demo](../demo/index.html) werden **keine KI-Modelle in Echtzeit aufgerufen**. Eine ausgewählte Ausgangsoption wird lediglich lokal im Browser mit allgemeinen, vorab formulierten Ethik-Linsen kontextualisiert; ein optionaler Freitext wird nicht analysiert. Die Seite speichert keine Übungsantworten serverseitig, hat weder Tracking noch eine Benutzeranmeldung und erhebt keine moralischen Scores.
+
+Die Demo beinhaltet eine sichtbare [KI-Transparenz](ki-transparenz.md) und folgt dem [Datenschutz-/WCAG-2.2-AA-Anforderungskatalog](dailyethics4all-datenschutz-wcag.md) als **Designziel**, noch ohne vollständigen Audit. Künftige Modellintegrationen müssen vorab hinsichtlich Datenfluss, Freiwilligkeit, Transparenzpflichten und normativer Verzerrungen überprüft werden.
+
 ---
 
 **Status und Geltung:** Dieses Dokument beschreibt Anforderungen und Hypothesen; es ist keine Zusicherung, dass eine Anwendung oder rechtskonformer Betrieb bereits existiert. Änderungen an Datenflüssen, Zweck, Zielgruppen oder KI-Systemen erfordern erneute Datenschutz-, Ethik- und Accessibility-Prüfung.
