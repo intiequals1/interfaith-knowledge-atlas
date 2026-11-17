@@ -101,6 +101,9 @@ Die DSGVO ist für einschlägige Verarbeitung personenbezogener Daten verbindlic
 
 Vor einem Organisations- oder Forschungsbetrieb müssen Betreiber, Datenschutzverantwortliche, Accessibility-Fachpersonen und Ethik-/Domänenreview verantwortlich benannt werden.
 
+
+**Konkreter HTML-Prototyp:** [demo/index.html](../demo/index.html) verwendet semantische Landmarks, Fokus- und Kontrastgestaltung und einen lokal ausgeführten Reflexionsablauf. [KI-Transparenz](ki-transparenz.md) ist im Interface direkt auffindbar. **Die Implementierung ist eine Demo, keine bestandene WCAG- oder DSGVO-Prüfung.** Vor öffentlicher Bereitstellung sind Tests mit Tastatur, Screenreader, Reflow/Zoom, statischer Codeprüfung, Netzwerkmitschnitt und Prüfung realer Hosting-Logs erforderlich.
+
 ## 7. Primärquellen
 
 - [W3C: WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
