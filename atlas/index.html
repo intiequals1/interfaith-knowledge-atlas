@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interfaith Knowledge Atlas: Quellenbasierte, noch nicht fachlich begutachtete Vergleichshypothesen zu moralischer Gegenseitigkeit in vier religiösen Traditionen.">
+  <meta name="color-scheme" content="light">
+  <title>Atlas erkunden | Interfaith Knowledge Atlas</title>
+  <link rel="stylesheet" href="../demo/styles.css">
+  <link rel="stylesheet" href="./atlas.css">
+  <script src="./atlas.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Direkt zum Inhalt</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="../index.html">Interfaith <span>Knowledge Atlas</span></a>
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav-list">
+          <li><a href="#fundstellen">Fundstellen</a></li>
+          <li><a href="#vergleich">Vergleich</a></li>
+          <li><a href="#methode">Methode</a></li>
+          <li><a href="../demo/index.html">DailyEthics4all</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt" tabindex="-1">
+    <section class="section atlas-intro" aria-labelledby="atlas-titel">
+      <div class="container atlas-hero-grid">
+        <div>
+          <p class="eyebrow">Interfaith Knowledge Atlas · Recherche-MVP</p>
+          <h1 id="atlas-titel">Ähnliche Gedanken. <em>Unterschiedliche Bedeutungen.</em></h1>
+          <p class="lead">Vergleiche moralische Aussagen über Gegenseitigkeit – mit präzisen Fundstellen, Kontext, Gegenargumenten und offengelegter Unsicherheit.</p>
+          <p>Der Atlas zeigt keine religiöse Rangliste und entscheidet nicht, welche Tradition „recht hat“. Jede Verbindung ist zunächst eine **ungeprüfte Vergleichshypothese**, keine wissenschaftlich freigegebene Äquivalenz.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#fundstellen">Fundstellen erkunden</a>
+            <a class="text-link" href="#vergleich">Zwei Aussagen vergleichen</a>
+          </div>
+        </div>
+        <aside class="plain-card atlas-state" aria-labelledby="status-titel">
+          <h2 class="card-title" id="status-titel">Forschungsstand</h2>
+          <dl class="short-facts">
+            <div><dt>Primärthema</dt><dd>Gegenseitigkeit / Goldene Regel</dd></div>
+            <div><dt>Traditionen</dt><dd>Christentum, Judentum, Islam, Hinduismus</dd></div>
+            <div><dt>Quellenstand</dt><dd>Bibliografische Hinweise, eigene Paraphrasen</dd></div>
+            <div><dt>Fachreview</dt><dd>Noch ausstehend</dd></div>
+            <div><dt>Technik</dt><dd>Statische Suche, keine Live-KI und kein Tracking</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section atlas-working" id="fundstellen" aria-labelledby="fundstellen-titel">
+      <div class="container">
+        <p class="eyebrow">01 / Quellen entdecken</p>
+        <h2 id="fundstellen-titel">Fundstellen und Lesarten</h2>
+        <p class="atlas-subheading">Die kurzen Aussagen sind <strong>eigene, nicht fachlich begutachtete Paraphrasen</strong> und keine Zitate aus einer Bibel- oder Schriftübersetzung. Über die Quellenlinks gelangst du direkt zu den veröffentlichten Fundstellen.</p>
+
+        <div class="atlas-controls" id="atlas-controls">
+          <div class="field">
+            <label for="modus">Datenbestand</label>
+            <select id="modus">
+              <option value="research">Quellenhinweise – Recherchekandidaten</option>
+              <option value="synthetic">Synthetische Testdaten – erfunden</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="suche">Stichwörter suchen</label>
+            <input id="suche" type="search" inputmode="search" placeholder="z. B. gegenseitigkeit, Hillel, Unterlassung" autocomplete="off" aria-describedby="suche-hilfe">
+            <p id="suche-hilfe" class="hint">Lokale Wortsuche im geladenen Bestand, keine KI-Suche.</p>
+          </div>
+          <div class="field">
+            <label for="tradition">Tradition / Datenart</label>
+            <select id="tradition"><option value="all">Alle anzeigen</option></select>
+          </div>
+        </div>
+        <p id="katalog-status" class="result-status" role="status" aria-live="polite">Der Katalog wird geladen.</p>
+        <ul id="karten" class="source-grid" aria-label="Gefundene Fundstellen"></ul>
+        <div id="katalog-fehler" class="important-note" role="alert" hidden>
+          <strong>Der lokale Katalog konnte nicht geladen werden.</strong>
+          <p>Die Quellenlinks weiter unten funktionieren weiterhin. Beim lokalen Öffnen der HTML-Datei kann das Laden von JSON durch Browsersicherheitsregeln verhindert werden. Verwende einen lokalen Webserver oder GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section comparison-section" id="vergleich" aria-labelledby="vergleich-titel">
+      <div class="container">
+        <p class="eyebrow">02 / Nebeneinander lesen</p>
+        <h2 id="vergleich-titel">Was stimmt überein – was nicht?</h2>
+        <p class="atlas-subheading">Wähle zwei verschiedene Fundstellen. Eine Verbindung zeigt <em>thematische Nähe</em> oder eine <em>teilweise Überlappung</em>, nicht automatisch dasselbe Gebot.</p>
+        <div class="compare-controls">
+          <div class="field"><label for="vergleich-links">Erste Fundstelle</label><select id="vergleich-links"></select></div>
+          <div class="field"><label for="vergleich-rechts">Zweite Fundstelle</label><select id="vergleich-rechts"></select></div>
+          <button type="button" class="button primary" id="vergleich-start">Vergleich anzeigen</button>
+        </div>
+        <p id="vergleich-status" class="result-status" role="status" aria-live="polite">Der Vergleich wird vorbereitet.</p>
+        <div id="vergleich-ergebnis" tabindex="-1"></div>
+      </div>
+    </section>
+
+    <section class="section" id="methode" aria-labelledby="methode-titel">
+      <div class="container narrow">
+        <p class="eyebrow">03 / Forschungs- und Ethikgrundsätze</p>
+        <h2 id="methode-titel">Was eine Ähnlichkeit belegen muss</h2>
+        <div class="method-list">
+          <article><h3>1. Fundstelle vor Interpretation</h3><p>Jede Lesart benennt Textgattung und konkrete Fundstelle. Urheberrechtlich ungeklärte Übersetzungen werden nicht übernommen; stattdessen wird zur Quelle verlinkt.</p></article>
+          <article><h3>2. Unterschiede sichtbar halten</h3><p>Handlung oder Unterlassung, Adressatenkreis, religiöse Begründung und historische Herkunft bleiben als eigene Merkmale erhalten.</p></article>
+          <article><h3>3. Keine maschinelle Wahrheitsinstanz</h3><p>Die aktuelle Suche ist regelbasiert. Vergleichshypothesen wurden KI-gestützt entworfen, sind ausdrücklich nicht fachlich begutachtet und dürfen nicht als autoritative Aussage über Religionen verstanden werden.</p></article>
+          <article><h3>4. Prüfung vor Veröffentlichung als Forschungsergebnis</h3><p>Spätere Freigaben benötigen dokumentierte Editionen, Quellen- und Rechteprüfung, unabhängige fachkundige Reviews und einen nachvollziehbaren Widerspruchs- und Korrekturprozess.</p></article>
+        </div>
+        <p><a class="text-link" href="../docs/atlas-mvp.md">Technische Dokumentation und Grenzen dieses MVP</a></p>
+        <p><a class="text-link" href="../docs/ki-transparenz.md">KI-Transparenz und Provenienz</a></p>
+      </div>
+    </section>
+
+    <section class="section safety-section" id="datenschutz" aria-labelledby="datenschutz-titel">
+      <div class="container narrow">
+        <p class="eyebrow">04 / Selbstbestimmung</p>
+        <h2 id="datenschutz-titel">Privat recherchieren. Barrierearm nutzen.</h2>
+        <p>Diese Oberfläche verwendet weder Benutzerkonten noch Cookies oder Werbetracker. Suche und Vergleich laufen im Browser; es werden keine Eingaben an einen KI-Dienst übertragen. Die Seite strebt WCAG 2.2 AA an. Ein vollständiger Audit mit assistiven Technologien ist noch ausständig.</p>
+        <p>Bei einem späteren öffentlichen Betrieb sind Hosting-Logs, Verantwortlichkeiten und Datenschutzinformation gesondert zu prüfen. Die Auswahldaten werden beim Verlassen der Seite nicht gespeichert.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Interfaith Knowledge Atlas</strong> · Offener Recherche-Prototyp mit ungeprüften Hypothesen</p>
+      <p>Gleiche Wörter sind nicht immer gleiche Aussagen; ähnliche Aussagen sind nicht immer gleicher Herkunft.</p>
+      <p><a href="../index.html">Projektübersicht</a> · <a href="../docs/konzeptpapier.md">Konzeptpapier</a> · <a href="../docs/ethik-und-rechte.md">Ethik und Rechte</a></p>
+    </div>
+  </footer>
+</body>
+</html>
