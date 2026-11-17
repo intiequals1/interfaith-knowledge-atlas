@@ -18,7 +18,7 @@ Der **Interfaith Knowledge Atlas** dokumentiert interpretative Beziehungen relig
 | --- | --- | --- |
 | Konzeptpapier und Projektstruktur | KI-gestützte Entwurfs- und Textarbeit im Dialog mit ChatGPT; das Konzept beruht auch auf Anliegen und Formulierungen des Projektinitiators. | Nicht als vollständig unabhängig begutachtete wissenschaftliche Publikation ausgeben. |
 | Dieses Transparenzdokument, HTML, CSS und JavaScript | Entwurf mit **OpenAI ChatGPT (GPT-6)**, erstellt am 17.11.2026. Änderungen sind über Git-Commits nachverfolgbar. | Kein abgeschlossener manueller WCAG-Test, keine geprüfte Datenschutzkonformität. |
-| HTML-Demo \`demo/index.html\` | Ein **statischer, lokal im Browser arbeitender Prototyp** mit vorformulierten Reflexionsperspektiven. **Kein KI-Modellaufruf, keine API-Verbindung, keine Antwort-Telemetrie.** | Keine Live-KI, keine individuell erzeugte ethische Beratung, keine serverseitige Speicherung von Übungsantworten. |
+| HTML-Demo `demo/index.html` | Ein **statischer, lokal im Browser arbeitender Prototyp** mit vorformulierten Reflexionsperspektiven. **Kein KI-Modellaufruf, keine API-Verbindung, keine Antwort-Telemetrie.** | Keine Live-KI, keine individuell erzeugte ethische Beratung, keine serverseitige Speicherung von Übungsantworten. |
 | Religiöse Textvergleiche | Zielarchitektur und konzeptionelle Beispiel-/Testdaten; Fachreview und Rechteklärung sind vor Publikation notwendig. | Keine automatische Gleichsetzung von Traditionen oder sichere Aussage über gemeinsame historische Herkunft. |
 
 **Prompt-Dokumentation, funktionsorientiert:** Die Anforderungen in diesem Projektentwurf entstanden aus der Bitte, (1) eine interreligiöse semantische Vergleichsinfrastruktur zu konzipieren, (2) DailyEthics4all.io als Ethik-Mikrolernformat zu ergänzen, (3) DSGVO/Privacy by Design, UX und WCAG 2.2 zu berücksichtigen und (4) einen KI-Transparenzabschnitt mit HTML-Demo und zugänglichem CSS zu erstellen. Dies ist eine **Zusammenfassung**, nicht ein vollständiges, unveränderliches Protokoll aller Nachrichten oder internen Modellparameter. Das Repository dokumentiert die konkreten Änderungen über Versionsgeschichte und Dateien. Weitere Modell- und Prompt-Provenienz ist **pro tatsächlich implementierter Funktion** nachzutragen.
@@ -41,7 +41,7 @@ Die gesonderten gesetzlichen **Transparenzpflichten aus Artikel 50 des EU AI Act
 
 Für später freizugebende vergleichende Interpretationen gilt:
 
-\`Quellenfundstelle → Edition/Übersetzung/Rechte → Lesart → maschineller Vorschlag (falls vorhanden) → menschliche Fachprüfung → redaktioneller Beschluss → veröffentlichte Revision\`.
+`Quellenfundstelle → Edition/Übersetzung/Rechte → Lesart → maschineller Vorschlag (falls vorhanden) → menschliche Fachprüfung → redaktioneller Beschluss → veröffentlichte Revision`.
 
 - KI-Vorschläge werden von autorisierten Personen geprüft; **kein ungeprüfter religiöser oder ethischer Normtext** wird als wahr ausgegeben.
 - Mehrere mögliche Lesarten, Widerspruch und Nichtwissen bleiben sichtbar.
@@ -61,7 +61,7 @@ Für später freizugebende vergleichende Interpretationen gilt:
 
 ## 6. Demo: expliziter Daten- und Funktionsumfang
 
-Die statische Demo \`demo/index.html\`:
+Die statische Demo `demo/index.html`:
 
 - funktioniert ohne Registrierung, Framework, Cookies, Webfonts und Drittanbieter-Skripte;
 - zeigt **vorab redaktionell formulierte** Perspektiven; alle Varianten haben denselben Reflexionskern;
