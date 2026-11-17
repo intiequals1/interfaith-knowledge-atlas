@@ -20,3 +20,10 @@
 Für fachliche Korrekturen genügen Eintrags-ID, Revision, Beobachtung und belegte Alternative. Rechte- und Datenschutzmeldungen brauchen vor dem externen Pilotbetrieb einen eingerichteten vertraulichen Meldeweg. Keine sensiblen Details oder Textkopien in GitHub Issues oder Pull Requests einfügen.
 
 Die Redaktion bestätigt Meldungen nach Möglichkeit binnen fünf Arbeitstagen. Bei plausiblen kritischen Meldungen sperrt sie die Anzeige vorläufig. Technik entzieht Zugriff in Ansicht, Index, Export und Cache und dokumentiert betroffene Snapshots. Das Fachreview und die Rechtekoordination prüfen die verbleibenden Ableitungen. Die Redaktion strebt eine begründete Erstentscheidung binnen 20 Arbeitstagen an. Bei Einspruch prüft eine bislang unbeteiligte Fachperson.
+
+
+## Ergänzende Leitplanken für DailyEthics4all.io
+
+Die getrennte Reflexions- und Lernkomponente unterliegt zusätzlichen Schutzbedingungen. Persönliche Erstentscheidungen und Freitexte können sensible Informationen offenbaren und dürfen nicht zur Personalbeurteilung oder zum Religions-/Weltanschauungsprofil werden. Für das MVP gilt ein rein flüchtiger, lokaler Standard ohne Konto und Antwort-Telemetrie; eine andere Verarbeitung setzt eigene Rechtsgrundlage, dokumentierte Risiken und technische Freigabe voraus. Ethik-Feedback darf keine scheinbar objektiven persönlichen Moral-Scores erzeugen. Die UX ist für [WCAG 2.2 AA](https://www.w3.org/TR/WCAG22/) zu entwerfen und durch manuelle Tests zu überprüfen.
+
+Siehe die [DailyEthics4all-Spezifikation](dailyethics4all.md) sowie [Datenschutz, UX und WCAG](dailyethics4all-datenschutz-wcag.md).
