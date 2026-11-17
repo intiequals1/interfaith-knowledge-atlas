@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate Atlas data and static interface
+        run: python3 scripts/test_atlas_static.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
