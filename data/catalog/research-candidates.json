@@ -1,0 +1,186 @@
+{
+  "schema_version": "0.1",
+  "dataset_type": "research_candidates",
+  "language": "de",
+  "theme": "Gegenseitigkeit und Rücksichtnahme",
+  "created_on": "2026-11-17",
+  "editorial_status": "unreviewed",
+  "rights_note": "Nur bibliografische Metadaten und eigenständig formulierte, ausdrücklich ungeprüfte Paraphrasen. Keine Übernahme von Originaltexten oder geschützten Übersetzungen.",
+  "last_checked_on": "2026-11-17",
+  "entries": [
+    {
+      "id": "christian-mt-7-12",
+      "tradition": "Christentum",
+      "work": "Neues Testament – Evangelium nach Matthäus",
+      "locator": "Matthäus 7,12",
+      "genre": "Evangelientext",
+      "source_url": "https://www.bibleserver.com/LUT/Matth%C3%A4us7%2C12",
+      "source_label": "ERF Bibleserver · Lutherbibel 2017",
+      "summary": "Orientiere das eigene Verhalten gegenüber anderen daran, wie man selbst behandelt werden möchte.",
+      "modality": "Positive Aufforderung",
+      "scope": "Verhalten anderen Menschen gegenüber",
+      "context": "Teil der Bergpredigt; im Zusammenhang mit dem Gesetz und den Propheten gelesen.",
+      "limitation": "Die Kurzfassung ersetzt keine Auslegung des Kontextes und keine zitierte Übersetzung.",
+      "keywords": [
+        "goldene regel",
+        "gegenseitigkeit",
+        "rücksicht",
+        "handeln",
+        "positiv",
+        "fairness"
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "jewish-shabbat-31a",
+      "tradition": "Judentum",
+      "work": "Babylonischer Talmud – Schabbat",
+      "locator": "Schabbat 31a:6",
+      "genre": "Talmudische Erzählung / Lehrüberlieferung",
+      "source_url": "https://www.sefaria.org/Shabbat.31a.6",
+      "source_label": "Sefaria · Schabbat 31a:6",
+      "summary": "Was man selbst als verletzend empfindet, soll man anderen nicht zufügen.",
+      "modality": "Negative Unterlassungsregel",
+      "scope": "Anderen keinen Schaden zufügen; Auslegungskontext beachten",
+      "context": "Erzählung über Hillels Antwort auf eine Frage nach einer knappen Zusammenfassung der Tora.",
+      "limitation": "Es handelt sich um eine talmudische Überlieferung, nicht um ein eigenständiges Tora-Gebot an dieser Fundstelle.",
+      "keywords": [
+        "goldene regel",
+        "gegenseitigkeit",
+        "nicht schaden",
+        "hillel",
+        "unterlassen",
+        "fairness"
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "islam-bukhari-13",
+      "tradition": "Islam",
+      "work": "Sahih al-Bukhari – Buch des Glaubens",
+      "locator": "Hadith 13",
+      "genre": "Hadith",
+      "source_url": "https://sunnah.com/bukhari:13",
+      "source_label": "Sunnah.com · Sahih al-Bukhari 13",
+      "summary": "Zur Ausprägung des Glaubens gehört, dem Glaubensbruder das zu wünschen, was man auch sich selbst wünscht.",
+      "modality": "Wunsch und Glaubensbezug",
+      "scope": "Die angezeigte Übersetzung bezeichnet ausdrücklich den 'Bruder'; Auslegungen des Adressatenkreises sind zu prüfen.",
+      "context": "Überlieferung in einem Hadith-Sammelwerk, nicht Vers aus dem Koran.",
+      "limitation": "Das Verhältnis zwischen Wortlaut, arabischem Ausgangstext und universaler Auslegung bedarf traditionskundiger Prüfung.",
+      "keywords": [
+        "gegenseitigkeit",
+        "wunsch",
+        "glaube",
+        "bruder",
+        "mitgefühl",
+        "fairness"
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "hindu-mahabharata-113",
+      "tradition": "Hinduismus",
+      "work": "Mahabharata – Anushasana Parva",
+      "locator": "Section 113 in einer englischen Übersetzung",
+      "genre": "Epos / Lehrtext",
+      "source_url": "https://getgnosis.app/read/mahabharata/1895/",
+      "source_label": "Gnosis · Mahabharata, Anushasana Parva, Section 113",
+      "summary": "Unterlasse gegenüber anderen, was man selbst als verletzend oder schädlich beurteilen würde.",
+      "modality": "Negative Unterlassungsregel",
+      "scope": "Regel zum Umgang mit anderen; konkreten Erzählzusammenhang prüfen",
+      "context": "Die Abschnittsnummerierung unterscheidet sich zwischen Editionen und Übersetzungstraditionen.",
+      "limitation": "Die konkrete Sanskrit-Fundstelle, Edition, Übersetzung und Varianten sind vor fachlicher Freigabe abzugleichen.",
+      "keywords": [
+        "goldene regel",
+        "gegenseitigkeit",
+        "ahimsa",
+        "nicht schaden",
+        "unterlassen",
+        "fairness"
+      ],
+      "status": "unreviewed"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "pair-mt-hillel",
+      "left": "christian-mt-7-12",
+      "right": "jewish-shabbat-31a",
+      "relation": "partial_overlap",
+      "shared": "Die eigene Erfahrung dient als Maßstab im Umgang mit anderen.",
+      "rationale": "Beide stellen eine Beziehung zwischen eigener Erwartung und Umgang mit anderen her.",
+      "differences": [
+        "Die matthäische Formulierung legt den Schwerpunkt auf ein positives Tun.",
+        "Die talmudische Überlieferung formuliert eine Grenze durch Nicht-Zufügen von Unerwünschtem.",
+        "Textgattung, religiöser Zusammenhang und Auslegungstradition unterscheiden sich."
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "pair-mt-bukhari",
+      "left": "christian-mt-7-12",
+      "right": "islam-bukhari-13",
+      "relation": "thematic",
+      "shared": "Die eigene Wunschperspektive wird zum Ausgangspunkt von Rücksichtnahme.",
+      "rationale": "Die Texte verbinden eigene Wünsche mit einer Orientierung gegenüber anderen, aber in unterschiedlicher normativer Form.",
+      "differences": [
+        "Matthäus nennt eine Handlungsorientierung; der Hadith bindet das Wünschen an Glaubensqualität.",
+        "Der im Hadith überlieferte Adressatenbegriff ist im Vergleich gesondert auszulegen."
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "pair-mt-mahabharata",
+      "left": "christian-mt-7-12",
+      "right": "hindu-mahabharata-113",
+      "relation": "partial_overlap",
+      "shared": "Die eigene Betroffenheit wird als Orientierung für das Verhalten zu anderen gebraucht.",
+      "rationale": "Beide verwenden eine Gegenseitigkeitslogik, setzen aber unterschiedliche Handlungsschwerpunkte.",
+      "differences": [
+        "Positive Handlungsaufforderung gegenüber negativer Schädigungsunterlassung.",
+        "Unterschiedliche literarische Formen und Deutungshorizonte.",
+        "Mahabharata-Fundstelle ist editionsabhängig zu verifizieren."
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "pair-hillel-bukhari",
+      "left": "jewish-shabbat-31a",
+      "right": "islam-bukhari-13",
+      "relation": "thematic",
+      "shared": "Das eigene Erleben bzw. Wünschen wird in Beziehung zu anderen Menschen gesetzt.",
+      "rationale": "Beide formulieren Normen für zwischenmenschliches Verhalten, jedoch auf unterschiedlicher Ebene.",
+      "differences": [
+        "Verbot, Unerwünschtes zuzufügen, gegenüber dem Wunsch nach Gutem.",
+        "Der Hadith enthält einen expliziten Glaubensbezug; die Talmudstelle steht in einer Lehrüberlieferung."
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "pair-hillel-mahabharata",
+      "left": "jewish-shabbat-31a",
+      "right": "hindu-mahabharata-113",
+      "relation": "partial_overlap",
+      "shared": "Was man selbst als schädlich empfindet, soll man einem anderen nicht antun.",
+      "rationale": "In den paraphrasierten Aussagen liegt eine ähnlich negative Gegenseitigkeitsregel vor.",
+      "differences": [
+        "Die Aussagen entstammen verschiedenen Gattungen und religiösen Lehrzusammenhängen.",
+        "Die konkrete Mahabharata-Edition und Auslegungsbreite bleiben zu überprüfen."
+      ],
+      "status": "unreviewed"
+    },
+    {
+      "id": "pair-bukhari-mahabharata",
+      "left": "islam-bukhari-13",
+      "right": "hindu-mahabharata-113",
+      "relation": "thematic",
+      "shared": "Das eigene Empfinden wird mit dem Wohlergehen anderer in Verbindung gebracht.",
+      "rationale": "Die Orientierung an eigenen Wünschen oder Erfahrungen ist thematisch verwandt; die Normen sind nicht gleichbedeutend.",
+      "differences": [
+        "Positiver Wunsch als Glaubensausdruck gegenüber der Unterlassung einer Schädigung.",
+        "Unterschiedliche Adressaten, Begründungen, Überlieferungen und Kontexte."
+      ],
+      "status": "unreviewed"
+    }
+  ]
+}
