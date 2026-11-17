@@ -2,7 +2,7 @@
 
 **Konzeptpapier für ein Forschungs- und Entwicklungsprojekt**
 
-Version 0.2 · 10. November 2026 · Projektentwurf
+Version 0.3 · 17. November 2026 · Projektentwurf
 
 ## Wo Ethik für mich beginnt
 
@@ -117,6 +117,16 @@ Erste heuristische Entscheidungen können **ohne persönliche Identifizierung od
 
 - [Vollständiges Modulkonzept DailyEthics4all.io](dailyethics4all.md)
 - [Datenschutz, UX und WCAG-2.2-AA-Anforderungen](dailyethics4all-datenschutz-wcag.md)
+
+## 11. KI-Transparenz und nachvollziehbare Verantwortung
+
+Die Konzeption des Atlas und des ergänzenden DailyEthics4all-Moduls erfolgte KI-gestützt; menschliche fachliche, rechtliche und barrierefreiheitsbezogene Begutachtung ist **nicht abgeschlossen**. Die eingesetzte Text- und Codeassistenz sowie der tatsächliche Funktionsumfang werden deshalb explizit dokumentiert.
+
+**Pflichtunterscheidung:** (1) Quellen und religiöse Überlieferungen, (2) menschliche Lesarten und überprüfte Annotationen, (3) ungeprüfte KI-generierte Vorschläge, (4) persönliche Reflexionen der Nutzerinnen und Nutzer. KI liefert keine verbindlichen theologischen oder moralischen Urteile. Eine Kennzeichnung „menschlich geprüft“ ist nur bei dokumentiertem Review zulässig.
+
+Die [statische HTML-Demo](../demo/index.html) bietet **keine Live-KI**: Perspektiven sind vorformuliert, Entscheidungen werden nur im Browser behandelt und nicht zu Arbeitgeberprofilen oder Moral-Scores verdichtet. Sie ist auf ein WCAG-2.2-AA-Designziel ausgelegt, aber **nicht als WCAG-konform auditiert**.
+
+Für spätere KI-Funktionen sind Einsatzpunkt, Datenempfänger, Rechtsgrundlage, Quellen, Modell-/Promptversion, Unsicherheit, Widerspruchsmöglichkeit, menschliche Aufsicht sowie mögliche Pflichten aus Art. 50 EU AI Act funktionsbezogen zu prüfen. [Vollständiges KI-Transparenzkonzept](ki-transparenz.md).
 
 ## Quellen zur Methodik
 
