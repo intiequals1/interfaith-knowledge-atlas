@@ -7,7 +7,12 @@
   const choiceLabel = document.getElementById("auswahl-anzeige");
   const status = document.getElementById("form-status");
   const showPerspectives = document.getElementById("show-perspectives");
-  if (!form || !result || !choiceLabel || !status || !showPerspectives) return;
+  const clearInputs = document.getElementById("clear-inputs");
+  const reason = document.getElementById("begruendung");
+  if (!form || !result || !choiceLabel || !status || !showPerspectives || !clearInputs || !reason) return;
+
+  // Bedienelemente nur aktivieren, wenn das Skript vollständig initialisiert ist.
+  document.documentElement.classList.remove("no-js");
 
   // Progressive Enhancement: ohne JavaScript bleiben die Perspektiven sichtbar.
   result.hidden = true;
@@ -19,8 +24,6 @@
     uncertain: "Weitere Informationen benötigen",
     skip: "Keine Entscheidung festhalten"
   });
-
-  form.addEventListener("submit", (event) => event.preventDefault());
 
   showPerspectives.addEventListener("click", () => {
     const selected = form.querySelector('input[name="decision"]:checked');
@@ -38,14 +41,18 @@
     result.focus();
   });
 
-  form.addEventListener("reset", () => {
+  const clearLocalInputs = () => {
+    form.querySelectorAll('input[name="decision"]').forEach((input) => { input.checked = false; });
+    reason.value = "";
     result.hidden = true;
     choiceLabel.textContent = "Du kannst die folgenden Perspektiven ohne eine persönliche Antwort lesen.";
-    status.textContent = "Die Formular-Eingaben wurden aus dieser Ansicht entfernt.";
-  });
+    status.textContent = "Die Eingaben wurden aus dieser Ansicht entfernt.";
+  };
 
-  window.addEventListener("pagehide", () => form.reset());
+  clearInputs.addEventListener("click", clearLocalInputs);
+
+  window.addEventListener("pagehide", clearLocalInputs);
   window.addEventListener("pageshow", (event) => {
-    if (event.persisted) form.reset();
+    if (event.persisted) clearLocalInputs();
   });
 })();
