@@ -35,3 +35,16 @@ Die folgenden Aufgaben beziehen sich ausschließlich auf das **konzeptionelle Le
 | D4A-10 | P1 | HTML-/CSS-Demo prüfen und für freigegebenen Pilot härten | Tastatur, Screenreader, Zoom, 320-CSS-px-Reflow, Farb- und Nicht-Text-Kontrast getestet; kein Absenden von Lernantworten, auch bei deaktiviertem JavaScript; barrierefreie Fehler-/Statusanzeigen; Findings dokumentiert |
 
 **Release-Gate:** Kein personenbezogener Forschungs- oder Organisationsbetrieb, bevor Datenschutzverantwortung, Rechtsprüfung, ggf. DSFA, Freigabeverfahren und Accessibility-Nachweise dokumentiert sind. Siehe [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md).
+
+## Implementierter Atlas-MVP und Folgeaufgaben (17. November 2026)
+
+Ein erster GitHub-Pages-Prototyp unter [atlas/](atlas/index.html) erlaubt Suche, Quellenfilter, synoptischen Vergleich und die Umschaltung auf synthetische Testdaten. Keine reale Lesart oder Vergleichsaussage besitzt bislang eine wissenschaftliche Fachfreigabe; der reale Recherchebestand ist ausdrücklich als ungeprüft gekennzeichnet. Automatisierte Integritätsprüfungen laufen vor dem Pages-Deployment. [Grenzen und Architektur](docs/atlas-mvp.md).
+
+| ID | Prio | Weiterentwicklung | Abnahme |
+| --- | --- | --- | --- |
+| IKA-10 | P0 | Editions-/Quelleninventar und unabhängiges Fachreview | Alle nichtsynthetischen Kurzdeutungen und Vergleiche mit konkret belegter Ausgabe und dokumentiertem Dissens |
+| IKA-11 | P0 | Erweiterte Rechte-, Review- und Revisionsobjekte | Echte Freigaben erst nach voneinander getrennten Prüfungen; technische Sperr- und Korrekturfälle |
+| IKA-12 | P1 | Permanente Links und Provenienzgraph | Zitierfähige Versionen, Rechtebelege, Abhängigkeiten und Export aus geprüften Datensätzen |
+| IKA-13 | P1 | Mehrsprachige semantische Suche als Evaluation | Benchmark gegenüber lokaler Stichwortsuche, Modell-/Datenprovenienz und Halluzinationsprüfung; keine automatische Wahrheitsentscheidung |
+| IKA-14 | P1 | Zugänglichkeits- und UX-Tests | WCAG-2.2-AA-Prüfung inkl. Tastatur, Screenreader, Zoom, Reflow, Vergrößerung und Fehlerbehebung |
+| IKA-15 | P2 | Inhaltliche Erweiterung auf Gerechtigkeit/Menschenwürde | Neue Themen erst nach Quellen- und Fachprüfung, klare Nicht-Äquivalenz zulassen |
