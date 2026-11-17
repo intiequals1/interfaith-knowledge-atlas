@@ -10,10 +10,12 @@ Das **Haus, in dem wir aufwachsen**, steht für die Menschen und das soziale Umf
 
 Der Interfaith Knowledge Atlas ist ein Forschungs- und Entwicklungsprojekt für den nachvollziehbaren Vergleich religiöser Aussagen aus Christentum, Judentum, Islam und Hinduismus. Der deutschsprachige Pilot untersucht Gegenseitigkeit. Jede geplante Gegenüberstellung verbindet konkrete Lesarten mit Editionsbelegen, Vergleichsgrund, Unterschieden und Prüfstatus.
 
-**Projektstand** · Konzept und validierbare synthetische Beispieldaten. Die Webanwendung, der Forschungskorpus und die Evaluation sind im Backlog geplant.
+**Projektstand** · Funktionsfähiges, statisch gehostetes Recherche-MVP mit Quellenhinweisen, lokaler Suche, Paarvergleich und getrenntem synthetischem Testbestand. Die vier Quellenkurzfassungen und sechs Verbindungen sind **nicht fachlich begutachtet**. Ein überprüfter wissenschaftlicher Korpus und die formale Evaluation sind weiterhin geplant.
 
 | Einstieg | Inhalt |
 | --- | --- |
+| [Atlas-Anwendung](atlas/index.html) | Recherche-MVP mit lokaler Suche, Quellenreferenzen und synoptischen Vergleichshypothesen |
+| [MVP-Dokumentation](docs/atlas-mvp.md) | Forschungsstatus, Datenherkunft, technische Umsetzung, Testverfahren und Grenzen |
 | [HTML-Startseite](index.html) | Statischer Einstieg mit Projektübersicht, KI-Transparenz und Zugang zur Demo |
 | [Konzeptpapier](docs/konzeptpapier.md) | Forschungsfragen, Vergleichsmethode, Provenienz, Evaluation und Roadmap |
 | [DailyEthics4all.io – Lernkonzept](docs/dailyethics4all.md) | Tägliche freiwillige Ethik-Mikroszenarien, Reflexionsfluss und Forschungshypothesen |
@@ -42,4 +44,4 @@ Für die Entwicklung sind ausschließlich synthetische oder nach dem dokumentier
 
 ## HTML-Demo lokal öffnen
 
-Die [Startseite](index.html) und die [Demo](demo/index.html) liegen als **Quellcode** unter `demo/` und ist nicht öffentlich bereitgestellt. Zur Vorschau das Repository mit Berechtigung klonen oder herunterladen und zunächst `index.html` oder direkt `demo/index.html` lokal im Browser öffnen. `styles.css` und `app.js` liegen im selben Verzeichnis. Die Reflexion bleibt lokal; es gibt keine Live-KI. Ohne JavaScript bleiben die allgemeinen Perspektiven als Text zugänglich. Vor einem Hosting sind Betreiberinformationen, Sicherheitsheader, Logging, DSGVO und eine vollständige manuelle WCAG-2.2-AA-Prüfung notwendig.
+Die [Startseite](index.html), der [Atlas](atlas/index.html) und die [DailyEthics4all-Demo](demo/index.html) liegen als HTML-Quellcode vor; ihre Bereitstellung erfolgt über den GitHub-Pages-Workflow. Für die lokale Vorschau das Repository klonen oder herunterladen. Im Repository-Stamm `python3 -m http.server 8000` starten und `http://localhost:8000/atlas/` öffnen; für die statische Startseite genügt `index.html` im Browser. Eine direkte `file://`-Öffnung des Atlas lädt die JSON-Dateien je nach Browser nicht. `demo/styles.css` und `demo/app.js` bedienen die Lern-Demo; für den Atlas gelten `atlas/atlas.css` und `atlas/atlas.js`. Die Reflexion bleibt lokal; es gibt keine Live-KI. Ohne JavaScript bleiben die allgemeinen Perspektiven als Text zugänglich. Vor einem Hosting sind Betreiberinformationen, Sicherheitsheader, Logging, DSGVO und eine vollständige manuelle WCAG-2.2-AA-Prüfung notwendig.
