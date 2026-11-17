@@ -32,6 +32,7 @@
   };
 
   if (Object.values(dom).some((node) => !node)) return;
+  document.documentElement.classList.remove("no-js");
 
   let current = { entries: [], comparisons: [], kind: "research", ready: false };
   let sequence = 0;
