@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DailyEthics4all.io – datensparsame Konzeptdemo für ethische Reflexion ohne Bewertung oder Live-KI.">
+  <meta name="color-scheme" content="light">
+  <title>DailyEthics4all.io – Ethik im Alltag reflektieren | Konzeptdemo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Direkt zum Inhalt</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#start" aria-label="DailyEthics4all.io – zur Einführung">Daily<span>Ethics</span>4all<span class="dot">.io</span></a>
+      <nav aria-label="Seitennavigation">
+        <ul class="nav-list">
+          <li><a href="#uebung">Übung</a></li>
+          <li><a href="#transparenz">KI-Transparenz</a></li>
+          <li><a href="#schutz">Datenschutz &amp; Zugang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt" tabindex="-1">
+    <section class="hero section" id="start" aria-labelledby="start-titel">
+      <div class="container hero-layout">
+        <div>
+          <p class="eyebrow">Interaktive Konzeptdemo · Version 0.1</p>
+          <h1 id="start-titel">Ethik wird im Alltag <em>geübt.</em></h1>
+          <p class="lead">Eine Entscheidung. Mehrere Perspektiven. Raum, um die eigene Haltung zu hinterfragen – ohne moralische Benotung.</p>
+          <p>DailyEthics4all.io erforscht, wie kurze berufliche Mikroszenarien das begründete Entscheiden unterstützen könnten. Die Wirkung ist noch nicht wissenschaftlich nachgewiesen.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#uebung">Beispiel durchdenken</a>
+            <a class="text-link" href="#transparenz">Wie wurde diese Seite erstellt?</a>
+          </div>
+        </div>
+        <aside class="plain-card" aria-labelledby="kurzinfo-titel">
+          <h2 id="kurzinfo-titel" class="card-title">Was du wissen solltest</h2>
+          <dl class="short-facts">
+            <div><dt>Live-KI</dt><dd>Keine – nur vorher formulierte Perspektiven</dd></div>
+            <div><dt>Deine Antworten</dt><dd>Keine Übertragung, kein Konto</dd></div>
+            <div><dt>Bewertung</dt><dd>Keine Punktzahl, keine Persönlichkeitsanalyse</dd></div>
+            <div><dt>Prüfstand</dt><dd>Konzeptdemo; fachlicher und WCAG-Audit offen</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+    <section class="section exercise-section" id="uebung" aria-labelledby="uebung-titel">
+      <div class="container narrow">
+        <p class="eyebrow">01 / Ein berufliches Dilemma</p>
+        <h2 id="uebung-titel">Die dringende Überweisung</h2>
+        <p class="section-intro">Ein fiktives Beispiel für die Sachbearbeitung im Rechnungswesen.</p>
+        <div class="story" aria-label="Ausgangssituation">
+          <p>Eine Lieferantenzahlung ist heute fällig. Kurz vorher wurde die Bankverbindung per E-Mail geändert. Deine Führungskraft bittet um sofortige Freigabe, um eine Lieferunterbrechung zu vermeiden. Die Änderung wurde noch nicht über einen unabhängigen Kanal bestätigt.</p>
+        </div>
+        <form id="reflection-form" autocomplete="off">
+          <fieldset class="choice-group">
+            <legend>Was wäre dein erster Schritt?</legend>
+            <p class="hint" id="auswahl-hinweis">Du kannst eine Option wählen oder die Auswahl offenlassen. Es gibt hier keine Bewertung.</p>
+            <label class="choice"><input type="radio" name="decision" value="check" aria-describedby="auswahl-hinweis"><span><strong>Unabhängig verifizieren</strong><small>Bankverbindung über einen bekannten, zweiten Kontaktweg prüfen.</small></span></label>
+            <label class="choice"><input type="radio" name="decision" value="release"><span><strong>Freigabe erwägen</strong><small>Die Folgen einer Verzögerung zunächst höher gewichten.</small></span></label>
+            <label class="choice"><input type="radio" name="decision" value="escalate"><span><strong>Konflikt offen ansprechen</strong><small>Risiken und Entscheidungsverantwortung mit der Führungskraft klären.</small></span></label>
+            <label class="choice"><input type="radio" name="decision" value="uncertain"><span><strong>Ich benötige weitere Informationen</strong><small>Noch keine Entscheidung treffen.</small></span></label>
+            <label class="choice"><input type="radio" name="decision" value="skip"><span><strong>Ich möchte keine Entscheidung festhalten</strong><small>Perspektiven trotzdem lesen.</small></span></label>
+          </fieldset>
+          <div class="form-field">
+            <label for="begruendung">Was beeinflusst deine erste Einschätzung? <span class="optional">(freiwillig)</span></label>
+            <p class="hint" id="begruendung-hinweis">Diese Notiz bleibt in diesem Browserfenster, wird nicht analysiert und nicht versendet. Bitte keine echten Personen- oder Geschäftsdaten eingeben.</p>
+            <textarea id="begruendung" name="reason" rows="3" maxlength="600" aria-describedby="begruendung-hinweis" placeholder="Zum Beispiel: Welche Information fehlt mir noch?"></textarea>
+          </div>
+          <div class="button-row">
+            <button class="button primary" type="submit">Perspektiven ansehen</button>
+            <button class="button secondary" type="reset">Eingaben löschen</button>
+          </div>
+          <p id="form-status" class="sr-only" role="status" aria-live="polite"></p>
+        </form>
+        <!-- Ohne JavaScript bleiben die Reflexionsperspektiven sichtbar. -->
+        <section id="perspektiven" class="reflection-result" aria-labelledby="perspektiven-titel" tabindex="-1">
+          <p class="eyebrow">02 / Perspektivenwechsel</p>
+          <h3 id="perspektiven-titel">Welche Fragen verändern den Blick?</h3>
+          <p id="auswahl-anzeige">Du kannst die folgenden Perspektiven ohne eine persönliche Antwort lesen.</p>
+          <div class="lens-list">
+            <article class="lens"><p class="lens-index">A</p><div><h4>Pflichten und Rechte</h4><p>Welche Kontrollpflichten gelten unabhängig vom Zeitdruck? Welche Mitwirkung und welche Absicherung sind geschuldet?</p></div></article>
+            <article class="lens"><p class="lens-index">B</p><div><h4>Folgen und Interessen</h4><p>Welche Risiken einer falschen Zahlung und welche Folgen einer Verzögerung sind wahrscheinlich? Wer trägt sie?</p></div></article>
+            <article class="lens"><p class="lens-index">C</p><div><h4>Beziehungen und Fürsorge</h4><p>Ist eine sachliche Rückfrage möglich, ohne dass Mitarbeitende Nachteile befürchten? Wer benötigt Unterstützung?</p></div></article>
+          </div>
+          <p class="takeaway"><strong>Wichtig:</strong> Dies sind vorab formulierte Reflexionsfragen, keine persönliche KI-Auswertung und keine konkrete Zahlungsanweisung. Du darfst deine Entscheidung beibehalten oder offenlassen.</p>
+          <a class="text-link" href="#transparenz">Warum nennt sich das KI-gestützt, obwohl hier keine KI antwortet?</a>
+        </section>
+      </div>
+    </section>
+    <section class="section" id="transparenz" aria-labelledby="transparenz-titel">
+      <div class="container narrow">
+        <p class="eyebrow">03 / Herkunft und Verantwortung</p>
+        <h2 id="transparenz-titel">KI-Transparenz</h2>
+        <p class="section-intro">Wir trennen die Entstehung des Projekts von dem, was die Anwendung tatsächlich tut.</p>
+        <dl class="transparency-facts">
+          <div><dt>Wie entstand diese Demo?</dt><dd>Konzeption, Formulierungen und Programmcode wurden mit OpenAI ChatGPT (GPT-6) am 17. November 2026 KI-gestützt entworfen. Der Anstoß und die Zielsetzungen stammen aus den Projektanforderungen. Die unabhängige fachliche Prüfung steht noch aus.</dd></div>
+          <div><dt>Antwortet mir hier eine KI?</dt><dd>Nein. Die drei Reflexionsperspektiven sind feste Texte. Es gibt weder einen Chatbot noch eine Verbindung zu einem KI-Dienst.</dd></div>
+          <div><dt>Wer bestimmt, was moralisch richtig ist?</dt><dd>Diese Seite vergibt keine moralischen Noten. Sie lädt dazu ein, Pflichten, Folgen und Beziehungen selbst zu prüfen. Ihre Fragen können unvollständig oder strittig sein.</dd></div>
+          <div><dt>Wer hat die Inhalte geprüft?</dt><dd>Es ist noch keine unabhängige fachliche, juristische oder Accessibility-Freigabe dokumentiert. Die Demo ist nicht als Beratung oder geprüfte Lehrplattform zu verstehen.</dd></div>
+        </dl>
+        <h3>Für künftige KI-Funktionen</h3>
+        <p>Sollte die Plattform einmal KI-gestützte Vorschläge anbieten, müssen diese unmittelbar als solche erkennbar sein. Verwendete Daten, Grenzen, Quellen, Modellversion und menschlicher Prüfstatus sollen nachvollziehbar sein. Persönliche Reflexionen werden nicht automatisch an ein KI-Modell übertragen.</p>
+        <p><a class="text-link" href="../docs/ki-transparenz.md">Vollständige KI-Transparenz und Provenienz ansehen</a></p>
+      </div>
+    </section>
+    <section class="section safety-section" id="schutz" aria-labelledby="schutz-titel">
+      <div class="container narrow">
+        <p class="eyebrow">04 / Deine Kontrolle</p>
+        <h2 id="schutz-titel">Datenschutz und Zugänglichkeit</h2>
+        <div class="two-column">
+          <div><h3>Datensparsamkeit</h3><p>Die Demo benötigt kein Konto und setzt keine Cookies oder Tracking-Dienste ein. Übungsantworten werden nicht an einen Server gesendet. Mit „Eingaben löschen“ entfernst du sie aus dem Formular.</p></div>
+          <div><h3>Barrierearme Nutzung</h3><p>Die Seite ist mit semantischem HTML, klaren Formularlabels, sichtbarem Tastaturfokus und anpassbarem Layout auf das Ziel WCAG 2.2 AA ausgelegt. Die vollständige Prüfung ist noch offen.</p></div>
+        </div>
+        <p class="important-note">Hinweis: Diese Demo ist keine rechtlich geprüfte Datenschutzerklärung und kein WCAG-Konformitätsnachweis. Für einen öffentlichen Betrieb wären zusätzlich Hosting, Server-Logs und Betreiberinformationen zu prüfen.</p>
+        <p><a href="../docs/dailyethics4all-datenschutz-wcag.md">Datenschutz- und WCAG-Anforderungskatalog</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>DailyEthics4all.io</strong> · Teilkonzept des Interfaith Knowledge Atlas · Demo 0.1</p>
+      <p>Entscheidungen verstehen, ohne Menschen zu bewerten.</p>
+      <p><a href="../README.md">Projektübersicht</a> · <a href="../docs/ki-transparenz.md">KI-Transparenz</a> · <a href="https://www.w3.org/TR/WCAG22/" rel="noopener noreferrer">WCAG 2.2</a></p>
+    </div>
+  </footer>
+</body>
+</html>
