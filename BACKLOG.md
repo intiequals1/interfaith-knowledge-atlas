@@ -15,3 +15,21 @@ Die Einträge bilden die geplante Umsetzung nach Einrichtung des Repositorys ab.
 | IKA-09 | P2 | JSON-LD-Export und Erweiterungsthema prüfen | IKA-08 | separat schätzen | PROV-O-/SKOS-Abbildung an Beispielen validiert. Priorisierung von Gerechtigkeit oder Menschenwürde anhand des Pilotbefunds. |
 
 P0 bestimmt die Reihenfolge zu Beginn. IKA-05 und IKA-06 können nach Abschluss der Daten- und Rechteprüfung parallel laufen. Eine gesonderte Schätzung für IKA-09 folgt nach dem Pilotbericht.
+
+
+## Ergänzungs-Backlog DailyEthics4all.io (eigenständiges Modul)
+
+Die folgenden Aufgaben beziehen sich ausschließlich auf das **konzeptionelle Lernmodul**; bisher besteht keine produktive Plattform. Sie sind vor externen Tests zu priorisieren. Aufwände werden nach UX- und Datenschutz-Scope festgelegt.
+
+| ID | Prio | Aufgabe | Abnahme |
+| --- | --- | --- | --- |
+| D4A-01 | P0 | Datenschutz- und Rollenmodell (Art. 6/9/25/28/32 DSGVO; Art. 35-Screening; Arbeitskontext) | Dokumentierte Datenflüsse und Zwecke; keine unbeabsichtigte Übermittlung von Reflexionen; Verantwortung und Rechtsgrundlagen geklärt; ggf. DSFA vor Pilot |
+| D4A-02 | P0 | WCAG-2.2-AA-Akzeptanzmatrix und Co-Design | Prüffälle für sämtliche anwendbaren AA-Kriterien, Tastatur, Screenreader, Zoom/Reflow, Sprache und Fokus; Menschen mit Behinderungen in Usability-Tests |
+| D4A-03 | P0 | Redaktions- und Nichtdiskriminierungsprotokoll für Szenarien | Rollen- und Perspektivenvielfalt; Quellennachweise; kein Moral-Scoring; fachlicher Freigabe- und Korrekturweg |
+| D4A-04 | P1 | Datensparsamer Lernprototyp ohne Account | Ein Szenario, Erstentscheidung, alternative Linsen, Rückblick, Überspringen, lokale flüchtige Daten, optionaler Download; keine Antwort-Telemetrie |
+| D4A-05 | P1 | Szenario-MVP mit Fachreviews | 12–20 fiktive Fälle (Management, Entwicklung, Sachbearbeitung), vier ethische Linsen, unterschiedliche legitime Interessen und Unsicherheitsoption |
+| D4A-06 | P1 | Kombinierte Privacy-/Accessibility-/Security-Tests | Manuelle und automatisierte WCAG-Prüfung; Netzwerkmitschnitt ohne private Nutztexte; dokumentierte Blocker und behobene kritische Probleme |
+| D4A-07 | P2 | Ethik-Pilot und Wirkungsforschung | Teilnahme freiwillig und von Arbeitgebersicht getrennt; präregistrierte Kriterien für Reflexionsqualität; kein personenbezogener Moral-Score |
+| D4A-08 | P2 | Optionaler IKA-Referenzadapter | Nur geprüfte Atlas-Revisionen, explizites Opt-in und klare Quellen-/Differenzanzeige; keine religiösen Nutzerprofile |
+
+**Release-Gate:** Kein personenbezogener Forschungs- oder Organisationsbetrieb, bevor Datenschutzverantwortung, Rechtsprüfung, ggf. DSFA, Freigabeverfahren und Accessibility-Nachweise dokumentiert sind. Siehe [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md).
