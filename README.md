@@ -15,6 +15,8 @@ Der Interfaith Knowledge Atlas ist ein Forschungs- und Entwicklungsprojekt für 
 | Einstieg | Inhalt |
 | --- | --- |
 | [Konzeptpapier](docs/konzeptpapier.md) | Forschungsfragen, Vergleichsmethode, Provenienz, Evaluation und Roadmap |
+| [DailyEthics4all.io – Lernkonzept](docs/dailyethics4all.md) | Tägliche freiwillige Ethik-Mikroszenarien, Reflexionsfluss und Forschungshypothesen |
+| [Datenschutz, UX und WCAG 2.2](docs/dailyethics4all-datenschutz-wcag.md) | Privacy by Design, DSGVO-Prüfstationen, inklusiver Lernfluss und WCAG-2.2-AA-Abnahmekriterien |
 | [Technische Richtlinien](docs/technik.md) | Datenvertrag, Architektur, Freigaberegeln und Betrieb |
 | [Ethik und Rechte](docs/ethik-und-rechte.md) | Kontext, Rechteprüfung, Datenschutz und Sperrverfahren |
 | [Mitwirken](CONTRIBUTING.md) | Beiträge, Review und Verantwortlichkeiten |
