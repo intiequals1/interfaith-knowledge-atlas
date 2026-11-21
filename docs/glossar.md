@@ -1,6 +1,6 @@
 # Glossar: Religion, Zugehörigkeit und Textvergleich
 
-**Version:** 0.1 · 21. November 2026  
+**Version:** 0.2 · 21. November 2026  
 **Status:** Allgemeines Begriffslexikon; keine religiöse Autorität, keine Zuordnung persönlicher Überzeugungen.  
 **Verwendung:** [Barrierearme Glossarseite](../glossar/index.html), [Interfaith Knowledge Atlas](../atlas/index.html).
 
@@ -9,6 +9,13 @@
 Begriffe aus familiärer religiöser Praxis, Bildungsangeboten, Theologie und Religionswissenschaft werden häufig vermischt. Eine Person kann beispielsweise **konfessionslos**, zugleich **gläubig** und **religiös praktizierend** sein. Umgekehrt kann eine Person formal Mitglied einer Religionsgemeinschaft, aber **nicht praktizierend** sein.
 
 Der Atlas unterscheidet deshalb mindestens vier Dimensionen: **(1) Zugehörigkeit**, **(2) Überzeugung/Gottesvorstellung**, **(3) Praxis** und **(4) gesellschaftliche bzw. institutionelle Rolle von Religion**. Diese Merkmale sind weder automatisch gleichbedeutend noch eine Rangordnung.
+
+### Im Vordergrund: säkular und konfessionslos
+
+- **Säkular** heißt im vorliegenden Zusammenhang *weltlich*: beispielsweise eine Ethik oder staatliche Institution, die nicht durch die Lehrautorität einer bestimmten Religion begründet wird. Der Begriff sagt nicht automatisch aus, ob jemand religiös zugehörig ist.
+- **Konfessionslos** heißt ohne formale Zugehörigkeit zu einer bestimmten Konfession beziehungsweise Kirche. Die Bezeichnung entscheidet nicht darüber, ob jemand persönlich glaubt oder religiöse Praktiken ausübt.
+
+Beispiel: Ein konfessionsloser Mensch kann säkulare ethische Argumente vertreten und gleichzeitig eine religiöse Tradition kulturell schätzen.
 
 ## A. Textvergleich und Wissenschaft
 
@@ -31,15 +38,14 @@ Der Atlas unterscheidet deshalb mindestens vier Dimensionen: **(1) Zugehörigkei
 | --- | --- | --- |
 | **Religion** | Historisch und kulturell unterschiedlicher Zusammenhang aus Überzeugungen, Praktiken, Gemeinschaften, Normen und Erfahrungen. | Kein einzelnes universelles Merkmal definiert alle Religionen. |
 | **Konfession** | Bekenntnisrichtung innerhalb einer Religion, besonders im christlichen Sprachgebrauch. | Katholisch oder evangelisch sind nicht verschiedene Weltreligionen. |
-| **Konfessionslos** | Ohne Zugehörigkeit zu einer bestimmten Konfession oder Kirche. | Nicht zwingend atheistisch oder ohne Spiritualität. |
+| **Konfessionslos** | Ohne formale Zugehörigkeit zu einer bestimmten Konfession oder Kirche. | Sagt nichts Verlässliches über persönliche Glaubensüberzeugungen oder Praxis aus. |
 | **Konfessionsfrei** | Häufig synonym mit konfessionslos, in bestimmten Gruppen auch bewusst weltanschauliche Selbstbezeichnung. | Kontext und Selbstbezeichnung beachten. |
 | **Religionslos** | Ohne Identifikation mit einer Religion; im Einzelfall verschieden verstanden. | Kann persönliche Spiritualität einschließen. |
 | **Religiös ungebunden** | Keine selbst angegebene Zugehörigkeit zu einer Religion (englisch *religiously unaffiliated*). | Keine Aussage darüber, ob jemand glaubt oder betet. |
-| **Religious nones** | Sozialwissenschaftliche Sammelkategorie für Personen, die in bestimmten Befragungen „atheist“, „agnostic“ oder „nothing in particular“ angeben. | Keine Religion und keine einheitliche Weltanschauung. |
+| **Religious nones** | Sozialwissenschaftliche Sammelkategorie für Personen, die in bestimmten Befragungen „atheist“ oder „nothing in particular“ beziehungsweise ohne konkrete Religionszugehörigkeit angeben. | Keine Religion und keine einheitliche Weltanschauung. |
 | **Areligiös** | Ohne ausgeprägte religiöse Orientierung oder Praxis; teils bewusste Selbstbeschreibung. | Nicht zwingend eine aktive Ablehnung von Religion. |
 | **Religiös indifferent** | Religiöse Fragen haben für die Person keine besondere Bedeutung. | Weder Atheismus noch Agnostizismus werden dadurch vorausgesetzt. |
 | **Atheismus** | Fehlender Glaube an Gott/Götter oder – in stärkerer Form – Verneinung göttlicher Existenz. | Betrifft Glaubensinhalt, nicht zwangsläufig Gemeinschaftszugehörigkeit. |
-| **Agnostizismus** | Position zur Frage, ob göttliche Existenz erkennbar oder gewiss ist. | Epistemische Haltung; kann je nach Verständnis mit atheistischen oder theistischen Einstellungen verbunden sein. |
 | **Theismus** | Annahme eines Gottes oder mehrerer Götter, je nach philosophischem Kontext. | Nicht mit institutioneller Religionsmitgliedschaft gleichzusetzen. |
 | **Deismus** | Annahme einer göttlichen Ursache/Schöpfung, üblicherweise ohne fortwährendes übernatürliches Eingreifen. | Philosophische Position, keine zwingende Konfession. |
 | **Spiritualität** | Individuell oder gemeinschaftlich gelebte Suche nach Sinn, Verbundenheit oder Transzendenz. | Kann religiös oder nicht religiös gedeutet werden. |
@@ -49,7 +55,8 @@ Der Atlas unterscheidet deshalb mindestens vier Dimensionen: **(1) Zugehörigkei
 
 | Begriff | Kurzdefinition | Wichtige Unterscheidung |
 | --- | --- | --- |
-| **Säkular** | Weltlich bzw. nicht religiös begründet oder organisiert. | Kein Synonym für „atheistisch“. |
+| **Säkular** | Weltlich; z. B. eine Ethik, öffentliche Ordnung oder Institution, die sich nicht auf die Lehrautorität einer bestimmten Religion stützt. | Beschreibt einen Bezugsrahmen, nicht zwingend die Zugehörigkeit eines Menschen. |
+| **Säkularität** | Weltlichkeit oder Unabhängigkeit einer gesellschaftlichen Ordnung von einer bestimmten religiösen Autorität. | Zustand oder Prinzip; Säkularisierung bezeichnet einen Prozess. |
 | **Säkularisierung** | Historischer und gesellschaftlicher Prozess veränderter religiöser Bindung, Autorität oder Institutionen. | Keine pauschale Behauptung, Religion verschwinde vollständig. |
 | **Laizität / Laizismus** | Prinzip bzw. politische Position einer Trennung staatlicher Ordnung von religiösen Institutionen; Formen variieren. | Nicht identisch mit persönlicher Religionslosigkeit. |
 | **Pluralismus** | Anerkennung bzw. gesellschaftliche Existenz verschiedener religiöser und weltanschaulicher Positionen. | Pluralität beschreibt Vielfalt; Pluralismus kann einen normativen Umgang damit meinen. |
@@ -74,7 +81,7 @@ Der Atlas unterscheidet deshalb mindestens vier Dimensionen: **(1) Zugehörigkei
 
 ## Vergleich für die Plattform
 
-Die Bezeichnungen werden **nicht** zu einer einzigen Nutzerkategorie „religiös / nicht religiös“ verdichtet. Ein Mensch könnte z. B. formal konfessionslos, agnostisch, spirituell interessiert und gelegentlich an religiösen Ritualen beteiligt sein. Daraus folgt weder ein Widerspruch noch die Berechtigung, ihn automatisch einer Weltanschauung zuzuordnen.
+Die Bezeichnungen werden **nicht** zu einer einzigen Nutzerkategorie „religiös / nicht religiös“ verdichtet. Ein Mensch könnte z. B. formal konfessionslos, spirituell interessiert und gelegentlich an religiösen Ritualen beteiligt sein. Daraus folgt weder ein Widerspruch noch die Berechtigung, ihn automatisch einer Weltanschauung zuzuordnen.
 
 **UX-/Datenschutzregel:** Das Glossar ist frei verfügbar. Bei einem späteren Personenprofil sind Religions- und Weltanschauungsangaben besonders sorgfältig im Hinblick auf Art. 9 DSGVO zu behandeln. Eine automatische Inferenz aus Suchbegriffen, besuchten Texten oder Übungsentscheidungen ist ausgeschlossen.
 
@@ -85,6 +92,8 @@ Die Bezeichnungen werden **nicht** zu einer einzigen Nutzerkategorie „religiö
 - Pew Research Center (2024): [Who are the religious “nones”?](https://www.pewresearch.org/religion/2024/01/24/who-are-the-nones-how-are-they-defined/).
 - Pew Research Center (2025): [What do religious “nones” believe?](https://www.pewresearch.org/religion/2025/09/04/what-do-religious-nones-believe/).
 - Universität Wien, Hochschulschrift (2025): [Differenzierung säkular, nichtreligiös und konfessionsfrei](https://utheses.univie.ac.at/thesis/77921).
+- Duden: [säkular – Bedeutung und Verwendung](https://www.duden.de/rechtschreibung/saekular).
+- Bundeszentrale für politische Bildung: [Vielfalt konfessionsloser Positionen](https://www.bpb.de/shop/zeitschriften/apuz/30674/die-zivilisierung-der-religionen-als-ziel-staatlicher-religionspolitik/).
 - EU: [Datenschutz-Grundverordnung (DSGVO)](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 Die Kurzdefinitionen sind für die Orientierung verfasst; kulturelle, konfessionelle und wissenschaftliche Verwendungsunterschiede bleiben zu berücksichtigen. Ein fachlicher Vollreview des Glossars steht noch aus.
