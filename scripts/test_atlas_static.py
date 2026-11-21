@@ -105,7 +105,7 @@ class AtlasTests(unittest.TestCase):
             self.assertEqual(len(item["readings"]), 2)
 
     def test_local_assets_and_navigation(self):
-        for relative in ("index.html", "atlas/index.html", "demo/index.html"):
+        for relative in ("index.html", "atlas/index.html", "demo/index.html", "glossar/index.html"):
             path = ROOT / relative
             parser = PageParser()
             parser.feed(path.read_text(encoding="utf-8"))
