@@ -14,6 +14,8 @@ Der Interfaith Knowledge Atlas ist ein Forschungs- und Entwicklungsprojekt für 
 
 | Einstieg | Inhalt |
 | --- | --- |
+| [Religionswissenschaftliches Glossar](glossar/index.html) | 40 Begriffe zu Synopse, Nichtzugehörigkeit, religiöser Praxis, Textinterpretation und Weltanschauungen |
+| [Glossar-Dokumentation](docs/glossar.md) | Definitionen, Abgrenzungen, Forschungsquellen und Zuordnungsregeln |
 | [Atlas-Anwendung](atlas/index.html) | Recherche-MVP mit lokaler Suche, Quellenreferenzen und synoptischen Vergleichshypothesen |
 | [MVP-Dokumentation](docs/atlas-mvp.md) | Forschungsstatus, Datenherkunft, technische Umsetzung, Testverfahren und Grenzen |
 | [HTML-Startseite](index.html) | Statischer Einstieg mit Projektübersicht, KI-Transparenz und Zugang zur Demo |
