@@ -1,0 +1,27 @@
+/* Glossar – WCAG 2.2 AA als Designziel; noch kein vollständiger Accessibility-Audit. */
+.glossary-content { padding-block: clamp(2.2rem, 5vw, 4.5rem); }
+.glossary-section { padding-block: 1.5rem 2.5rem; scroll-margin-top: 1.5rem; }
+.glossary-section + .glossary-section { border-top: 1px solid var(--border); }
+.glossary-section h2 { max-width: 35ch; }
+.glossary-grid { margin: 1.7rem 0 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.term { border: 1px solid var(--border); border-radius: .85rem; background: var(--paper); padding: clamp(1rem, 3vw, 1.5rem); scroll-margin-top: 1.5rem; min-width: 0; }
+.term:target { outline: 3px solid var(--focus); outline-offset: 3px; }
+.term dt { font-size: 1.24rem; font-weight: 760; line-height: 1.3; margin-bottom: .6rem; }
+.term dd { margin: 0; }
+.term dd p { margin-bottom: .6rem; }
+.term dd p:last-child { margin-bottom: 0; }
+.term-note { border-top: 1px solid var(--border); padding-top: .75rem; color: var(--muted); }
+.quick-terms { display: flex; flex-wrap: wrap; gap: .6rem; margin-block: 1.3rem; }
+.quick-terms a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .5rem 1rem; background: var(--paper); color: var(--link); border: 1px solid #70858a; border-radius: 1.5rem; font-weight: 700; text-align: center; }
+.quick-terms a:hover { background: var(--accent-soft); }
+.source-list { padding-left: 1.4rem; }
+.source-list li { margin-bottom: .8rem; }
+@media (max-width: 46rem) {
+  .glossary-grid { grid-template-columns: 1fr; }
+  .term { padding: 1.15rem; }
+  .quick-terms a { flex: 1 1 auto; }
+}
+@media (forced-colors: active) {
+  .term, .quick-terms a { border: 2px solid CanvasText; }
+  .term:target { outline: 3px solid Highlight; }
+}
