@@ -44,7 +44,7 @@ Beispiel: Ein konfessionsloser Mensch kann säkulare ethische Argumente vertrete
 | **Religiös ungebunden** | Keine selbst angegebene Zugehörigkeit zu einer Religion (englisch *religiously unaffiliated*). | Keine Aussage darüber, ob jemand glaubt oder betet. |
 | **Religious nones** | Sozialwissenschaftliche Sammelkategorie für Personen, die in bestimmten Befragungen „atheist“ oder „nothing in particular“ beziehungsweise ohne konkrete Religionszugehörigkeit angeben. | Keine Religion und keine einheitliche Weltanschauung. |
 | **Areligiös** | Ohne ausgeprägte religiöse Orientierung oder Praxis; teils bewusste Selbstbeschreibung. | Nicht zwingend eine aktive Ablehnung von Religion. |
-| **Religiös indifferent** | Religiöse Fragen haben für die Person keine besondere Bedeutung. | Weder Atheismus noch Agnostizismus werden dadurch vorausgesetzt. |
+| **Religiös indifferent** | Religiöse Fragen haben für die Person keine besondere Bedeutung. | Daraus folgt keine bestimmte Haltung zur Existenz Gottes. |
 | **Atheismus** | Fehlender Glaube an Gott/Götter oder – in stärkerer Form – Verneinung göttlicher Existenz. | Betrifft Glaubensinhalt, nicht zwangsläufig Gemeinschaftszugehörigkeit. |
 | **Theismus** | Annahme eines Gottes oder mehrerer Götter, je nach philosophischem Kontext. | Nicht mit institutioneller Religionsmitgliedschaft gleichzusetzen. |
 | **Deismus** | Annahme einer göttlichen Ursache/Schöpfung, üblicherweise ohne fortwährendes übernatürliches Eingreifen. | Philosophische Position, keine zwingende Konfession. |
